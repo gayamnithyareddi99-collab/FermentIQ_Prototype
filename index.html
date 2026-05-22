@@ -976,9 +976,7 @@ tr:hover td{background:var(--bg2)}
 <nav class="sb">
   <div class="sb-brand">
     <div class="sb-logo-row">
-      <div class="sb-icon">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=80&q=80" alt="FermentIQ"/>
-      </div>
+      <div class="sb-icon"></div>
       <div>
         <div class="sb-brand-name">Ferment<em>IQ</em></div>
       </div>
@@ -2811,7 +2809,24 @@ tr:hover td{background:var(--bg2)}
           <div class="grid-4">
             <div class="pilot-stat sg"><div class="pilot-stat-val" style="color:var(--g4)">81%</div><div class="pilot-stat-lbl">Operators "highly impressed" by BDD accuracy</div></div>
             <div class="pilot-stat st"><div class="pilot-stat-val" style="color:var(--t1)">86%</div><div class="pilot-stat-lbl">Interested in predictive readiness intelligence</div></div>
-            <div class="pilot-stat sb"><div class="pilot-stat-val" style="color:var(--b1)">7</div><div class="pilot-stat-lbl">Non-binding LOIs submitted after demos</div></div>
+            <div class="pilot-stat sb" style="background:linear-gradient(135deg,rgba(2,132,199,0.10),rgba(13,148,136,0.07));border:2px solid rgba(2,132,199,0.35);position:relative;overflow:hidden">
+              <div style="position:absolute;top:-18px;right:-18px;width:72px;height:72px;border-radius:50%;background:radial-gradient(circle,rgba(2,132,199,0.18),transparent 70%);pointer-events:none"></div>
+              <div style="display:flex;align-items:center;justify-content:center;gap:6px;margin-bottom:4px">
+                <div style="width:8px;height:8px;border-radius:50%;background:var(--b2);box-shadow:0 0 8px rgba(2,132,199,0.7);animation:glow-pulse 2s ease-in-out infinite"></div>
+                <div class="pilot-stat-val" style="color:var(--b1)">7</div>
+              </div>
+              <div class="pilot-stat-lbl" style="font-weight:600;color:var(--tx2)">Non-binding LOIs submitted after demos</div>
+              <div style="margin-top:8px;display:flex;justify-content:center;gap:4px">
+                <span style="display:inline-block;width:18px;height:4px;border-radius:2px;background:var(--b2);opacity:0.9"></span>
+                <span style="display:inline-block;width:18px;height:4px;border-radius:2px;background:var(--b2);opacity:0.9"></span>
+                <span style="display:inline-block;width:18px;height:4px;border-radius:2px;background:var(--b2);opacity:0.9"></span>
+                <span style="display:inline-block;width:18px;height:4px;border-radius:2px;background:var(--b2);opacity:0.9"></span>
+                <span style="display:inline-block;width:18px;height:4px;border-radius:2px;background:var(--b2);opacity:0.9"></span>
+                <span style="display:inline-block;width:18px;height:4px;border-radius:2px;background:var(--b2);opacity:0.9"></span>
+                <span style="display:inline-block;width:18px;height:4px;border-radius:2px;background:var(--b2);opacity:0.9"></span>
+              </div>
+              <div style="margin-top:6px;font-family:var(--fm);font-size:.42rem;color:var(--b1);letter-spacing:.12em;text-transform:uppercase">4 pizzerias · 3 bakery groups</div>
+            </div>
             <div class="pilot-stat sw"><div class="pilot-stat-val" style="color:var(--warn)">48%</div><div class="pilot-stat-lbl">Willing to pay £150–£400/mo immediately</div></div>
           </div>
         </div>
@@ -2819,51 +2834,225 @@ tr:hover td{background:var(--bg2)}
 
 
         <div class="sec animate-in">
-          <div class="sec-badge teal" style="margin-bottom:16px">Letters of Intent — Phase 1 Participants</div>
-          <div class="grid-2">
-            <div style="display:flex;flex-direction:column;gap:10px">
-              <div class="loi-card">
-                <div class="loi-header"><span class="loi-biz">North East Pizzeria Group (4 sites)</span><span class="badge badge-g">LOI Signed</span></div>
-                <div class="loi-region">Newcastle · Durham · Sunderland</div>
-                <div class="loi-detail" style="margin-top:6px">Seeking to clone senior Head Baker's Dough DNA across all locations. Primary interest: Batch Delta Diagnostics and FRFO scheduling for high-volume weekend service.</div>
+          <!-- Section header with context banner -->
+          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:20px">
+            <div>
+              <div class="sec-badge teal" style="margin-bottom:8px">Letters of Intent — Phase 1 Participants</div>
+              <div style="font-family:var(--fh);font-size:.95rem;font-weight:700;color:var(--tx1)">7 Operators. 1 Clear Signal.</div>
+              <div style="font-size:.76rem;color:var(--tx3);margin-top:4px;max-width:540px">All LOIs received within 4 weeks of live demos. Non-binding — but every operator confirmed intent to onboard at Phase 1 launch. Projected MRR from this cohort alone: <strong style="color:var(--g3)">£1,650–£2,500/mo</strong>.</div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
+              <div style="display:flex;gap:8px">
+                <span style="display:flex;align-items:center;gap:5px;padding:4px 10px;border-radius:20px;background:rgba(5,150,105,0.08);border:1px solid rgba(5,150,105,0.2);font-family:var(--fm);font-size:.44rem;color:var(--g3)">
+                  <span style="width:6px;height:6px;border-radius:50%;background:var(--g4)"></span>Pizzeria · 4 LOIs
+                </span>
+                <span style="display:flex;align-items:center;gap:5px;padding:4px 10px;border-radius:20px;background:rgba(2,132,199,0.08);border:1px solid rgba(2,132,199,0.2);font-family:var(--fm);font-size:.44rem;color:var(--b1)">
+                  <span style="width:6px;height:6px;border-radius:50%;background:var(--b2)"></span>Bakery · 3 LOIs
+                </span>
               </div>
-              <div class="loi-card">
-                <div class="loi-header"><span class="loi-biz">Independent Artisan Sourdough Co.</span><span class="badge badge-g">LOI Signed</span></div>
-                <div class="loi-region">Jesmond, Newcastle upon Tyne</div>
-                <div class="loi-detail" style="margin-top:6px">Critical need: summer humidity-driven over-proofing elimination. Interested in Starter plan with FIU sensor deployment and Consistency DNA reporting.</div>
+              <div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4);text-align:right">Q1 2026 · North East England</div>
+            </div>
+          </div>
+
+          <!-- LOI cards grid — 7 cards + chart -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+
+            <!-- Card 1 -->
+            <div class="loi-card" style="position:relative;overflow:hidden;border-left:4px solid var(--g4)">
+              <div style="position:absolute;top:0;right:0;width:60px;height:60px;background:radial-gradient(circle at top right,rgba(5,150,105,0.12),transparent 70%);pointer-events:none"></div>
+              <div class="loi-header">
+                <div>
+                  <div style="display:flex;align-items:center;gap:7px;margin-bottom:2px">
+                    <div style="width:28px;height:28px;border-radius:8px;background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--g4)" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                    </div>
+                    <span class="loi-biz">North East Pizzeria Group</span>
+                  </div>
+                  <div class="loi-region">Newcastle · Durham · Sunderland · 4 sites</div>
+                </div>
+                <span class="badge badge-g">LOI #01</span>
               </div>
-              <div class="loi-card">
-                <div class="loi-header"><span class="loi-biz">Northern Commissary Kitchen Ltd.</span><span class="badge badge-t">LOI Signed</span></div>
-                <div class="loi-region">Gateshead, North East England</div>
-                <div class="loi-detail" style="margin-top:6px">High-volume supplier to 15+ outlets requiring centralised FSO for brand integrity. FSA compliance automation and waste reduction the primary drivers.</div>
-              </div>
-              <div class="loi-card">
-                <div class="loi-header"><span class="loi-biz">Mid-Market Bakery Group (3 sites)</span><span class="badge badge-b">LOI Signed</span></div>
-                <div class="loi-region">Durham · Teesside</div>
-                <div class="loi-detail" style="margin-top:6px">Scaling from 3 to 8 sites in 2027. Needs institutional baking memory system before expansion. Signed LOI for Professional plan trial across 3 existing sites.</div>
+              <div class="loi-detail" style="margin-top:8px">Seeking to clone senior Head Baker's Dough DNA across all locations. Primary interest: Batch Delta Diagnostics and FRFO scheduling for high-volume weekend service.</div>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid rgba(5,150,105,0.1)">
+                <div style="display:flex;gap:5px;flex-wrap:wrap">
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">Batch Delta Diagnostics</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">FRFO Scheduling</span>
+                </div>
+                <div style="font-family:var(--fm);font-size:.44rem;color:var(--g3);font-weight:700">£250/mo</div>
               </div>
             </div>
-            <div style="display:flex;flex-direction:column;gap:10px">
-              <div class="loi-card">
-                <div class="loi-header"><span class="loi-biz">Premium Artisan Bakehouse</span><span class="badge badge-g">LOI Signed</span></div>
-                <div class="loi-region">Jesmond Village, Newcastle</div>
-                <div class="loi-detail" style="margin-top:6px">Award-winning sourdough producer seeking to preserve 12-year-old dough recipe logic. Interest in Baking Equity framework and Consistency DNA annual audit.</div>
+
+            <!-- Card 2 -->
+            <div class="loi-card" style="position:relative;overflow:hidden;border-left:4px solid var(--g5)">
+              <div style="position:absolute;top:0;right:0;width:60px;height:60px;background:radial-gradient(circle at top right,rgba(5,150,105,0.10),transparent 70%);pointer-events:none"></div>
+              <div class="loi-header">
+                <div>
+                  <div style="display:flex;align-items:center;gap:7px;margin-bottom:2px">
+                    <div style="width:28px;height:28px;border-radius:8px;background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--g4)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                    </div>
+                    <span class="loi-biz">Independent Artisan Sourdough Co.</span>
+                  </div>
+                  <div class="loi-region">Jesmond, Newcastle upon Tyne</div>
+                </div>
+                <span class="badge badge-g">LOI #02</span>
               </div>
-              <div class="loi-card">
-                <div class="loi-header"><span class="loi-biz">QSR Pizza Franchise Group</span><span class="badge badge-t">LOI Signed</span></div>
-                <div class="loi-region">North East England — 6 locations</div>
-                <div class="loi-detail" style="margin-top:6px">Franchise-level consistency demands across 6 sites. Seeking F-IN benchmarking access and automated Signal-to-Action workflows to reduce manager workload.</div>
+              <div class="loi-detail" style="margin-top:8px">Critical need: summer humidity-driven over-proofing elimination. Interested in Starter plan with FIU sensor deployment and Consistency DNA reporting.</div>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid rgba(5,150,105,0.1)">
+                <div style="display:flex;gap:5px;flex-wrap:wrap">
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">FIU Sensors</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">Consistency DNA</span>
+                </div>
+                <div style="font-family:var(--fm);font-size:.44rem;color:var(--g3);font-weight:700">£100/mo</div>
               </div>
-              <div class="loi-card">
-                <div class="loi-header"><span class="loi-biz">Regional Food Consultancy Firm</span><span class="badge badge-b">LOI Signed</span></div>
-                <div class="loi-region">Newcastle / Manchester</div>
-                <div class="loi-detail" style="margin-top:6px">Wants to resell FermentIQ-powered Consistency DNA Audits to their bakery clients as a premium advisory service. Exploring white-label partnership arrangement.</div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="loi-card" style="position:relative;overflow:hidden;border-left:4px solid var(--t1)">
+              <div style="position:absolute;top:0;right:0;width:60px;height:60px;background:radial-gradient(circle at top right,rgba(13,148,136,0.12),transparent 70%);pointer-events:none"></div>
+              <div class="loi-header">
+                <div>
+                  <div style="display:flex;align-items:center;gap:7px;margin-bottom:2px">
+                    <div style="width:28px;height:28px;border-radius:8px;background:rgba(13,148,136,0.1);border:1px solid rgba(13,148,136,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--t1)" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    <span class="loi-biz">Northern Commissary Kitchen Ltd.</span>
+                  </div>
+                  <div class="loi-region">Gateshead, North East England · 15+ outlets served</div>
+                </div>
+                <span class="badge badge-t">LOI #03</span>
               </div>
-              <div class="chart-panel">
-                <div class="chart-title">LOI Interest by Business Type</div>
-                <div class="chart-sub">Breakdown of signed LOIs across operator categories</div>
-                <div class="chart-wrap"><canvas id="c-loi-type"></canvas></div>
+              <div class="loi-detail" style="margin-top:8px">High-volume supplier to 15+ outlets requiring centralised FSO for brand integrity. FSA compliance automation and waste reduction the primary drivers.</div>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid rgba(13,148,136,0.1)">
+                <div style="display:flex;gap:5px;flex-wrap:wrap">
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(13,148,136,0.08);color:var(--t1);border:1px solid rgba(13,148,136,0.2)">Centralised FSO</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(13,148,136,0.08);color:var(--t1);border:1px solid rgba(13,148,136,0.2)">HACCP Automation</span>
+                </div>
+                <div style="font-family:var(--fm);font-size:.44rem;color:var(--t1);font-weight:700">£500/mo</div>
               </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="loi-card" style="position:relative;overflow:hidden;border-left:4px solid var(--b2)">
+              <div style="position:absolute;top:0;right:0;width:60px;height:60px;background:radial-gradient(circle at top right,rgba(2,132,199,0.12),transparent 70%);pointer-events:none"></div>
+              <div class="loi-header">
+                <div>
+                  <div style="display:flex;align-items:center;gap:7px;margin-bottom:2px">
+                    <div style="width:28px;height:28px;border-radius:8px;background:rgba(2,132,199,0.1);border:1px solid rgba(2,132,199,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--b2)" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+                    </div>
+                    <span class="loi-biz">Mid-Market Bakery Group</span>
+                  </div>
+                  <div class="loi-region">Durham · Teesside · 3 sites → scaling to 8</div>
+                </div>
+                <span class="badge badge-b">LOI #04</span>
+              </div>
+              <div class="loi-detail" style="margin-top:8px">Scaling from 3 to 8 sites in 2027. Needs institutional baking memory system before expansion. Signed LOI for Professional plan trial across 3 existing sites.</div>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid rgba(2,132,199,0.1)">
+                <div style="display:flex;gap:5px;flex-wrap:wrap">
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(2,132,199,0.08);color:var(--b1);border:1px solid rgba(2,132,199,0.2)">Baking Memory</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(2,132,199,0.08);color:var(--b1);border:1px solid rgba(2,132,199,0.2)">Multi-Site FSO</span>
+                </div>
+                <div style="font-family:var(--fm);font-size:.44rem;color:var(--b1);font-weight:700">£250/mo</div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="loi-card" style="position:relative;overflow:hidden;border-left:4px solid var(--g4)">
+              <div style="position:absolute;top:0;right:0;width:60px;height:60px;background:radial-gradient(circle at top right,rgba(5,150,105,0.10),transparent 70%);pointer-events:none"></div>
+              <div class="loi-header">
+                <div>
+                  <div style="display:flex;align-items:center;gap:7px;margin-bottom:2px">
+                    <div style="width:28px;height:28px;border-radius:8px;background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--g4)" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <span class="loi-biz">Premium Artisan Bakehouse</span>
+                  </div>
+                  <div class="loi-region">Jesmond Village, Newcastle · Award-winning</div>
+                </div>
+                <span class="badge badge-g">LOI #05</span>
+              </div>
+              <div class="loi-detail" style="margin-top:8px">Award-winning sourdough producer seeking to preserve 12-year-old dough recipe logic. Interest in Baking Equity framework and Consistency DNA annual audit.</div>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid rgba(5,150,105,0.1)">
+                <div style="display:flex;gap:5px;flex-wrap:wrap">
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">Baking Equity</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">DNA Audit</span>
+                </div>
+                <div style="font-family:var(--fm);font-size:.44rem;color:var(--g3);font-weight:700">£100/mo</div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="loi-card" style="position:relative;overflow:hidden;border-left:4px solid var(--t3)">
+              <div style="position:absolute;top:0;right:0;width:60px;height:60px;background:radial-gradient(circle at top right,rgba(13,148,136,0.12),transparent 70%);pointer-events:none"></div>
+              <div class="loi-header">
+                <div>
+                  <div style="display:flex;align-items:center;gap:7px;margin-bottom:2px">
+                    <div style="width:28px;height:28px;border-radius:8px;background:rgba(13,148,136,0.1);border:1px solid rgba(13,148,136,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--t1)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    </div>
+                    <span class="loi-biz">QSR Pizza Franchise Group</span>
+                  </div>
+                  <div class="loi-region">North East England · 6 franchise locations</div>
+                </div>
+                <span class="badge badge-t">LOI #06</span>
+              </div>
+              <div class="loi-detail" style="margin-top:8px">Franchise-level consistency demands across 6 sites. Seeking F-IN benchmarking access and automated Signal-to-Action workflows to reduce manager workload.</div>
+              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid rgba(13,148,136,0.1)">
+                <div style="display:flex;gap:5px;flex-wrap:wrap">
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(13,148,136,0.08);color:var(--t1);border:1px solid rgba(13,148,136,0.2)">F-IN Benchmarking</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(13,148,136,0.08);color:var(--t1);border:1px solid rgba(13,148,136,0.2)">Signal-to-Action</span>
+                </div>
+                <div style="font-family:var(--fm);font-size:.44rem;color:var(--t1);font-weight:700">£500/mo</div>
+              </div>
+            </div>
+
+            <!-- Card 7 — full width with special highlight -->
+            <div class="loi-card" style="grid-column:1/-1;position:relative;overflow:hidden;border:2px solid rgba(2,132,199,0.4);background:linear-gradient(135deg,rgba(2,132,199,0.07),rgba(13,148,136,0.05))">
+              <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:radial-gradient(circle,rgba(2,132,199,0.15),transparent 70%);pointer-events:none"></div>
+              <div style="display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap">
+                <div style="flex:1;min-width:220px">
+                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
+                    <div style="width:32px;height:32px;border-radius:9px;background:rgba(2,132,199,0.12);border:1px solid rgba(2,132,199,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--b2)" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    <span class="loi-biz" style="font-size:.88rem">Regional Food Consultancy Firm</span>
+                    <span class="badge badge-b" style="margin-left:4px">LOI #07 · Partner</span>
+                  </div>
+                  <div class="loi-region">Newcastle / Manchester · B2B White-label</div>
+                  <div class="loi-detail" style="margin-top:8px">Wants to resell FermentIQ-powered Consistency DNA Audits to their bakery clients as a premium advisory service. Exploring white-label partnership arrangement.</div>
+                  <div style="margin-top:10px;padding:10px 12px;background:rgba(2,132,199,0.06);border-radius:var(--r);border:1px dashed rgba(2,132,199,0.25)">
+                    <div style="font-family:var(--fm);font-size:.46rem;color:var(--b1);font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px">Strategic Value</div>
+                    <div style="font-size:.74rem;color:var(--tx2)">This LOI represents a channel partnership — one contract could introduce FermentIQ to <strong>10–20 additional bakery clients</strong> via the consultancy's existing client base, without additional CAC.</div>
+                  </div>
+                </div>
+                <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end;flex-shrink:0">
+                  <div style="font-family:var(--fm);font-size:.44rem;color:var(--b1);font-weight:700;padding:4px 10px;border-radius:20px;background:rgba(2,132,199,0.1);border:1px solid rgba(2,132,199,0.25)">White-label API</div>
+                  <div style="font-family:var(--fm);font-size:.44rem;color:var(--b1);font-weight:700;padding:4px 10px;border-radius:20px;background:rgba(2,132,199,0.1);border:1px solid rgba(2,132,199,0.25)">Consistency DNA Audit</div>
+                  <div style="font-family:var(--fm);font-size:.5rem;color:var(--b1);font-weight:800;margin-top:4px">£500/mo + rev share</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Summary bar below cards -->
+          <div style="margin-top:16px;padding:14px 20px;border-radius:var(--rl);background:linear-gradient(135deg,rgba(5,150,105,0.06),rgba(13,148,136,0.04));border:1px solid rgba(5,150,105,0.18);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+            <div style="font-size:.78rem;color:var(--tx2);font-weight:600">Combined projected MRR from these 7 LOIs (conservative):</div>
+            <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+              <div style="text-align:center"><div style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:var(--g3)">£1,650</div><div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4)">Minimum MRR</div></div>
+              <div style="text-align:center"><div style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:var(--t1)">£2,500</div><div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4)">Maximum MRR</div></div>
+              <div style="text-align:center"><div style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:var(--b1)">100%</div><div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4)">Demo → LOI Rate</div></div>
+              <div style="text-align:center"><div style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:var(--warn)">4 wks</div><div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4)">Avg. time to sign</div></div>
+            </div>
+          </div>
+
+          <!-- Chart remains -->
+          <div style="margin-top:16px">
+            <div class="chart-panel">
+              <div class="chart-title">LOI Interest by Business Type</div>
+              <div class="chart-sub">Breakdown of signed LOIs across operator categories</div>
+              <div class="chart-wrap"><canvas id="c-loi-type"></canvas></div>
             </div>
           </div>
         </div>
@@ -2895,7 +3084,7 @@ tr:hover td{background:var(--bg2)}
             <div class="hero-sub">Ready to eliminate fermentation guesswork? Book a personalised platform demo, speak with Rajashaker directly, or find out which plan fits your operation best.</div>
             <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:18px">
               <button class="btn-prim" style="background:rgba(255,255,255,0.18);border:1px solid rgba(255,255,255,0.3);backdrop-filter:blur(8px)" onclick="openDemo()">Book a Free Demo</button>
-              <button class="btn-sec" style="background:rgba(255,255,255,0.1);color:#fff;border-color:rgba(255,255,255,0.3)">Download Brochure</button>
+              <a href="data:application/pdf;base64,JVBERi0xLjQKJZOMi54gUmVwb3J0TGFiIEdlbmVyYXRlZCBQREYgZG9jdW1lbnQgKG9wZW5zb3VyY2UpCjEgMCBvYmoKPDwKL0YxIDIgMCBSIC9GMiAzIDAgUiAvRjMgNiAwIFIKPj4KZW5kb2JqCjIgMCBvYmoKPDwKL0Jhc2VGb250IC9IZWx2ZXRpY2EgL0VuY29kaW5nIC9XaW5BbnNpRW5jb2RpbmcgL05hbWUgL0YxIC9TdWJ0eXBlIC9UeXBlMSAvVHlwZSAvRm9udAo+PgplbmRvYmoKMyAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYS1Cb2xkIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMiAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjQgMCBvYmoKPDwKL0NvbnRlbnRzIDExIDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFyZW50IDEwIDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAvVHJhbnMgPDwKCj4+IAogIC9UeXBlIC9QYWdlCj4+CmVuZG9iago1IDAgb2JqCjw8Ci9Db250ZW50cyAxMiAwIFIgL01lZGlhQm94IFsgMCAwIDU5NS4yNzU2IDg0MS44ODk4IF0gL1BhcmVudCAxMCAwIFIgL1Jlc291cmNlcyA8PAovRm9udCAxIDAgUiAvUHJvY1NldCBbIC9QREYgL1RleHQgL0ltYWdlQiAvSW1hZ2VDIC9JbWFnZUkgXQo+PiAvUm90YXRlIDAgL1RyYW5zIDw8Cgo+PiAKICAvVHlwZSAvUGFnZQo+PgplbmRvYmoKNiAwIG9iago8PAovQmFzZUZvbnQgL0hlbHZldGljYS1PYmxpcXVlIC9FbmNvZGluZyAvV2luQW5zaUVuY29kaW5nIC9OYW1lIC9GMyAvU3VidHlwZSAvVHlwZTEgL1R5cGUgL0ZvbnQKPj4KZW5kb2JqCjcgMCBvYmoKPDwKL0NvbnRlbnRzIDEzIDAgUiAvTWVkaWFCb3ggWyAwIDAgNTk1LjI3NTYgODQxLjg4OTggXSAvUGFyZW50IDEwIDAgUiAvUmVzb3VyY2VzIDw8Ci9Gb250IDEgMCBSIC9Qcm9jU2V0IFsgL1BERiAvVGV4dCAvSW1hZ2VCIC9JbWFnZUMgL0ltYWdlSSBdCj4+IC9Sb3RhdGUgMCAvVHJhbnMgPDwKCj4+IAogIC9UeXBlIC9QYWdlCj4+CmVuZG9iago4IDAgb2JqCjw8Ci9QYWdlTW9kZSAvVXNlTm9uZSAvUGFnZXMgMTAgMCBSIC9UeXBlIC9DYXRhbG9nCj4+CmVuZG9iago5IDAgb2JqCjw8Ci9BdXRob3IgKFwoYW5vbnltb3VzXCkpIC9DcmVhdGlvbkRhdGUgKEQ6MjAyNjA1MjIwNTUzNDIrMDAnMDAnKSAvQ3JlYXRvciAoXCh1bnNwZWNpZmllZFwpKSAvS2V5d29yZHMgKCkgL01vZERhdGUgKEQ6MjAyNjA1MjIwNTUzNDIrMDAnMDAnKSAvUHJvZHVjZXIgKFJlcG9ydExhYiBQREYgTGlicmFyeSAtIFwob3BlbnNvdXJjZVwpKSAKICAvU3ViamVjdCAoXCh1bnNwZWNpZmllZFwpKSAvVGl0bGUgKFwoYW5vbnltb3VzXCkpIC9UcmFwcGVkIC9GYWxzZQo+PgplbmRvYmoKMTAgMCBvYmoKPDwKL0NvdW50IDMgL0tpZHMgWyA0IDAgUiA1IDAgUiA3IDAgUiBdIC9UeXBlIC9QYWdlcwo+PgplbmRvYmoKMTEgMCBvYmoKPDwKL0ZpbHRlciBbIC9BU0NJSTg1RGVjb2RlIC9GbGF0ZURlY29kZSBdIC9MZW5ndGggNTU1Ngo+PgpzdHJlYW0KR2IiLylnTk1AMVFAN0BkaSs0NjEtPVoiKU9GLyNDVS1yaz1OXCtoZVJeTiZbWXBiSEsnajJrZDtVZiY8cVokYiRBWjZmX1Z1IU1XWC8jMGlfMVFnXmtDTz4qaXVfXzA/KityakgsOUsnLltaPWFpZWUmNUJRaXArXXQkLSFIQmBCSjtIXjRsbk1KUTw5O0UxTTtsbV90QytWUCJkUjddSEA2dTY9PCg9MS1BbGgzIkAjYyQoLzxuS2E5U0xiUzsiM2A6I1tVLzRKLzl1aS5IMGtiOHJvO19pQiEvYE1HSS5gPlNyVDMqQHRoMWo3KklwQjA9TTdwanUvVShQXysrMmBfVG5ZQFlRWVhjIiNbUHBFaSVNQ1phaztqLDVeO2plSmIkUEM/RmorT28hIl5eZilJQTdGSyJrNEtENmdrLjJsbyZDQ0FWS2pROUk3XVMuWk5Ccm1LN0QtI0o6WUouNktmR005LDk0TzVkRTFfT0pjMnE9JEJicjIuaDQtRFpMOCRVYG9oJWZJJ1ImNkxRMCVxJjFYOlN0V0s0RG5jSEIralZHbjAxVDQxYk80XVsxYmFhakAtUjhCKGZQRiZ0LWVqUVBKUy8uRyc2dVxeblRAS0pILUVaYCo4NFgpc1VWbnAwLzEvOW5oUVROMy0saDsiKzxYIy5eLEtJOklyNE8nJE9lUFk0RFNvOGs+O3JlXkc5XihGXjpLLyowPyhoWjVEZDM6YywvbEdBNE5pcT9NbD5sdU4wRWJOUi9kXmoiUUpyc09fQkRLIkwjPThdI2swOi1OWzEuVDNcP0NQIVw9ZHEnZldhcWsrdSM1XTFWO0ImO0xnJz4rRmotamdyTzJvNXI/PDpDa1ZHdUJgOjgrO19wXEt0RztpQXJkYCZUTlhPQXBYTyFCMmwkVClaY1YiNFNYcF5pbUs7Z0h0QkRoSG5PZU1VYGFxRypsTzxeJ0I7NFVMYkRhTy10N11TLU9iNVIoR0MkV3IoOSNgKEZfIWdydFhlckdwNG0tMCsnKHUiJENkUTkuPDgpXl86XyxdaVMnX0B1OTpmJmpvZSduOT5LXEdWKlpaVi9xNmRjQT1BSi4jNGwraEBiKm0yTylBQz5fKSMyWUw4bCY6SW5aXlhhJjhsPiouMWswaDxDPmNgcGxuJzVcbTc3SWQxIyVCZSMvSW42ZTRKOms8ZGIsSSs/OjQvZ2pBU140QCcoVTs6KDVycF9JVlJPVyVcMjVhOitbMyo0OnJDYjFRIVFbK2JIciRBJm9FLDl0VmNIZUZdb15kQktwXHIwTk5ZNFdfUCxLP2R0TyIxYHQxTyZNJ2hBOGlRUjAxNzZkMyteYVxBaDZSdDJMbXExXVRqOjkxaVNPJDhVTkRjQjlvR3VmWS9dbE9zNFhmXUE1a2ooQktFUTVJZGpDaWVlTzdiLC8ucmgqK2VVOnE/Zm1MZUY1SW1sU0NuNzhuKikoNj91SVVhYCduY1JJImY3RGNPcDYubUxATTZ0P2RAc0QzKWtnWWJZbjxXdThTaylLaDs7OG9GLGVKV0hEPls5MyMhPyE8MixWbzkpQXNYPlg5XDg1JGNfMjpNOyNXcy5FUUhfQEsxcCZaNUhHcyJbQHQobCwrQ0pgP3RNUyFtX1teNnMhIiJDcCNjdUZoZ3BxJEZnK2AjPDpvU1AvVSt0XGBGXiJcUWZMaSxMLWZXWjpVWGRPZ1UxUSJHJjxzWTNlNTNUKGlYdTY1ND9aLzxvTW5uI0FSNC1iX25uKDwnb2Npb2lNMjRjNEVuZkFqXEs9Z1YpQ0ldOWosP3FXISRbJWZociNAVWI7JS5EXFBmSVInOW9nNF1FQEEzJUdKKT8pZ2pMLk0pbWI2XVhZZCItRWhIIVpLYihYXDAuLlpRVyc0S2loJ1EvUGdDMU9yOWUtOnRQRUJtWEldaSIpR0VjZzVGW0IuYiFicTRlUkBIRTMjPiRwIzhQbVVVX0JQOzQiOyUrJTtdWiY9TzBaYnVGWENbJ1FIUEFpQ1YwT25CPl9TSyRNMHQ4YSkqQXQ5S3BGTjBJYlJgW2syXSJpczEoV1M3T0E6LTcxO3NgMktjUEc8R2FKYi4jJy4uWmtHZipBVjZKXDAqZz9FRixzZGRbVCIwPzleVl1JPDdzKXEwZyU3USFHZUJQTGAybjUlSHU9OC4jOzdrcEYnRSpPSlt1amhAVm5iZ2RTRlYhS1NWamlfZF5NXGdZW3Q+MXQ7LCtlNmtROGsuJFleKlNZXGIxRlg2cW1zI2ZJVkAmJW5qSWktMVs4VigwLl8pWVtjZDQjJj06SkRXOUlULVQ7TDMnI1UsXS80ZUBJZm87TTFyRCNxO1MiSWFAOEhbJVktUWRlbW00L1tYaFZcJChoXnVMOV5GUywvLj1kdFNTZ1AycXBraSFYOlI+SW04aCtTJ0VOOXNJUkpUQzBVNWFpaEAxaSEhK1ddZVVDXjlTPWY1K2BMLlRoVU5eKlJRMV8oZUdOcGciYEBgNnNRWnVVTmdOJkpUakpFUFptRiEyP1ZyOi1KRG9JYTg7OV9yNyRgIiFaWkBOYz1mXU9TMCpHVlFgYGFtV2VEXDgnMnFGaS8vYignXkguTlUtNWtMUWhjZiQqInQ9ISxyZyNzSjleZVctTFosYDFBQ0ExaSpSMic2UE45Kllqbj9BM2k+Si8pP0cjLmBYXVlYUlZxUjxfaGNoLnUzVDstS0koa3Bjcy1AIz9sXTFMTmMxYFBeUVdwcnNJY2VWSS9PLlRdRmBfWy1wIkNSakEvV1giby5ZZFBEXy9PU1ZFJDktU3BDbmQzLmQlJE1cVVJeXE1XWlpLUl5jN2o4QTlCUytDXnBxbiYnZG1hZUVMbW5fODleTms8S0c0UCZrRzQ/cmxwa2NeQ2FlM1llNkEjQ2cuMFFEcUchQSQrUTFJQz9TT1skTVhudSxTTmEkOV9DQmwhMktQS10rYFFnWXIvKSk6OUMrdUtiKyxZcCFFbkEibU9WU09JQjtiLyJtOHUkLmJyJGJZUE46aVhGPWl0KDwmT1EkPWNRUWheTnE7JU9lYyJyMGhcOnRKMzU5WEpOPFhIV1tUJFQ3T3NoZThYX1RdQiU9NyJUWTRzdDlhc2EwViVXVGVeJD09RikrRm1RY1tJPXBYRC0/MERxVj5NWVxxSSRmbzVaJFg4Q0AhOCEqQlIrWzFBcDckSF9HOFFSPSpvLUMvYyk9QiowXGI/OzpdZzdQNiVGOz1uSmFyblxPMyNGMyFoW3RjTWdlOzA8VmBjUzVLZycwOSZpJyxlNChebGwpMFMtMl5gSVMuQDlDTjhuYTRfaEtQPTBxTFNKQWZwdF1jX1JROSdwJUhbKW5LLyJpUGlOXTFTbSZrcTlqbl1GMnI6YFJHI0Q+MF45JGA1WzMoaycjX15hUkZxZkgnP08sOXFFY2FYRWlqVWcsRG9SKjItXTpFIyVtcFgyKkdScjQ6QT5yQ2N1MzNuJkIzQittRSxuYiUhQiY2Z1xUZz1tI2B0ZGVbS1w1V1MnX24/ZTtvI1wzR2M6U3U2ai9HSV9xRzdtP0dQOlpRU2E9VlpkdTFGaisqO3UoJmRnbHUxMipvXGFlcFskbjo+VyRybycjSkBsQmJ1JGRUQnQqdCYhKlsxSUNUKDg9OlViUFNYLEJYbipAUm1AQ2BKbUFkdFdOXDhVXSpNOV9WMmxpdCxXclYpUiVqNXQsVEZpaWQoSiwlOlVWYk8tOyc1RDpMVylVcThlNzM+V1c2biFYZnJpJjw0ME5IPWtaYU1oXmE/Z11EMF1FTiEpQidZPnNJMV48Z1M1NVo5UigqW2RKb1YwJkhScyE+Vj1faHBvXWhINVA+KWVVI3ApZi8zVjouXyJ1UGpnJkYzb1xGLShybC84Z2E5cGA2X3EpW0hPMWxaUC0lQjlpcGFUcGFrNjdFMyhbLE5rRltLYklcMi0jRCRoQTVsUzI3MlQpaVdNST87QShbRT1wO2c0K2NtXzZ1Pkw+T0kkK0lIUiphRWZOOWw4XD83Z1EyRjZfNWglVnNKUGs0LkklXUBvPz4/IV5WaChELCUwa0loPmVsSTY8LD9vOFpsUG87RlkiaVg3PGpMWypjVzxqNjFUUys7V3BacGI+Vj5KSmVNbGdlUCoxKjVLLFxyWz8qZ2olXTQlcXNySyJFUCRzJidxRmtMPllDJzNkLTtMST8tWjxfXSReMCE+b3BkXCUyMlVwOjBvZz9URmxlallWXSdgNSYjIi48WV51IiNwWnVXcUg8XTBldVRPbGJAUCNjQzg8Y21MXEdfYCkiMENdNlNRXVEuJWBtLjMrRzNxI2VNOENtN0RWODtTPE9pTllQaCJGQV9TOTV0YFU3TTBFOlVCLDlxRlQ3UCZoJ1ZwcFIvWmwsXixLQENrIjswYmkkXG9aJmY8W1xWIjNDPGkzVDIhITUuMUFsR0FhOS9tRTotXDhlM1pXLVFpPUBqaEdDIXVIOWtqMjA2OG8tQ2lxXlJRQDRjUTVxdHUiR2tnXDdWKjxvcW1HSnA+VTJLXGV0YE5zKGVXOldlIkExOUtmYjpcQWxdMidNPiwuMkYucilrVyxjRyVYM10wazM6MHFSL0ZNTlolbUJiM2AnOl5BKjE1J2U/LDE3PVc6Ym8ydWU1ZSU2aHJdSkxkYEshOGEsJWBRUVQwNzl0UTlVaWdLVWYiY29AXU1GOkJgVEZdRE1NKklvXEkqWUJEbkM5O1BPNiI4LjlLPmE8UVNkdFxTIj1EUmRBUGpCaSshYChzXG9SMmxRM1wmOmJpXCVnTjc5T2ZlZkIlVDlSXDs1LjdEMXIpNkhvMjFAQ0l1Z3JUYUgwYyJLV19vWGBNSS9hRCoxclJZJyxMJThSNEteYTlrMHNCOExkcC5tTS8zTjMnXjBlQGMuaDxjOUowTyYhRFVGSi1uUyhMUVM8cDpMLDwlOk1jLnEqWkZsLUlePk9vXSpNQU0+cHMqK0RAY1FmNV1xY2IoOjA4OExJZ0F1J0QhRXFabWMmQE4xYiwtPyhxWVBbJzJQOG1dSEszcz5eMEYvKWs+JkBAYmwzM05eOT1GJi8kZl0nUSE3PjJsLjZaV0RSXXRFUSRQS0RVclZGPDRCPydfZltKbCIwZzVORzJhcV4oWUY7REhmV0xbP2g+JjlPamc9b1hVXjBzNmheVSE7Rmt0LEZRKCtIZ1NrYmxWUztTWTI3IWZEOVZnTHF1SiFSQ0Q+bVZQT09rJldXMkpGaXEvcyU2ZCx1XC9LJCc3Pi8nV3NhRDgpWVlXKD9EWkAsLG8pRVguV2ApWDVnc0dVSGNxc0JoQTRdJWlAQFpfXS1QUjlEai1fQWJuYzxcSy1MPnIrU2VNM0RIPGA5RHAiVGpfZDJwMyxkIjVFISVXJzAkIU9GYWhZJjJFZTZIRCJMPEdVVWIxNThDIkxrPkhCIik8KldDL14uYj5wOV8wL09iTV89LzhZXzhTLWdAY2lWNigucmg3MFYsOlQiOFdTUyJcTyNXKmBkXmJOXUpJbS9GbE4kTjxQJlxMYmVkTC8hTTtwcFFXPGdhLEIkJWkuMlVzMHA7cWZPbiIrOi1ZdTtKWHE4LGhwXkNKaUV0XVBUOjUoWF81XydKSTYjIm0jPzFcPSlGLjxZRWhLRj9oJGw0VjJGdFcmWmAsYWxdNHBjbCpXIl0oXVxIZFFjc2ZxNW5HMEIkV0VuUDooTCNGSC86K2ZdNEU5MiI0ZSo9akZFI2xAbSIobztUSS1QaSRtVUEiR0hGTmtbLF5jVTxNclhnLy0hKW4qbygsS2cwbmc7YnFxOydlWCc+XkhcXScoP2dZMTxyXidDQ1tIWV5qbi9HI3Q/ZVhwYz1ZSi1MZjcwS09AWCQoQV9zMUhAWlxRLC9pLUNXVic2W2ZSRWpmOCFyQlU/X10+NnRFQ3AncGlAJnBrVCNQTjwjP0VkLkVFOCJvMy9aZkdqWUQ5Xig3MCZSamBuVGRXXk1ca0BUQiFXWTJkXDwuPEo+YlkiWD1MPG5YN1BnWl1GSWM+QWdtXVJKZ11VOSRPLTsqYG5rLCIxXVwiXkdHb1g9Y107U3FnMnA8SGVta1A2UkooMSk4IUJkTjxYUltDbE41NVJOPHBRalFyN0dLIihFSic7PWZXVVwvX0xQZCVLVldkYV5JNEtyJ3IyRGU1K2ROQVJDJFB1ZCIhN3JzVyc1WiIzXFd0MUYxcHBqQiJic2soKkdHJkltYnFaQnBLIy8laFdQci9DXEBkZWluXHRUcThNVW9MWC8xS0BxOz9mTmZTITNwS1RwO1o5YG9RMjcnIVdrbk5yPUo/QVEvLyVbXUtJXDYoU0onW3UuSSxGZWE1SkNxM3I7MmUwSSguRUNDIWY1V2s9ZFQ+RD5dZlIkPjBeWEA2TzVUL29TSGNySC0nKVgiSTpNI2FNdENqQEdqX0o+cUYnbkVmcjlWcjY8Qm1Ac1UnJWs/Pj1CZkZqWz9qIj1sMkZsJE5cRCxUTm9pL2txZi1SXWc+amRAOlYoRWQoZUFIXmRnOTMqXV0nTidrRTo0O0JBPkstImxAIUE4SHNKQjtqZmIwRVxqXFIpPDtYIjFjbyhjamxpNDBTPSVIYUdvJE84QltfQ0tyKVM5XVs+a0xpcEdicidNM2l1bzBWUz1Vc0BBMCpWazpPVFFrU2oobydFJyU+UToiWSlDPCdsXmc1Nm1jbGJmXnMkVFo3R29yQD43bHNARmtxPkI4LydKJ2NoQCtWRWhFUCdRcF9iUDMmZFh0L1VBdU04MVlGTjg7USwtXyhQazRDOmNCUlxbX3A8L2M7MGE7OVw7RDZ1M0I7LkAlIT8objpSMEooUF5JZSlwN0F0JGExSk1TbyFFPCs2YEJeYz9JMSwrRW5oOUpFKGA2XTovSW01U29hTzNPLTZWWzk2QURQWCtpWyQ5Qj4kIzxTOlNeZ1pCZEZvaC9Tb2txOUBpaUAiajloUFQ5aWcoSmNpVkglW2NWPmJmM2xJR0BpQTpzVFFON0xvbloyLCNoViU0V0I3XjpaOUI2ZXJIQ2czczs2c1ddLig8b0Q8ZWghQGo0IURHPTw2UzVuXCRZPGk6PnItOjJBTDxPRlInYTtxUFVOUkQ4VjtKcVJzQiFaMyUuaEVIWDxESDk2JkomUk5OMW40RTo4J2QmMFJWZVdDZ21yZzUiXzkrUG5UIVs+P25abHU3MmwvWVpbJy0tPj9FSmJeXFY7U1Ioc0FzMVg3RHFKW1c7cD88L2lJZ0hZUDBATzJvYTJjJV9pRlM+Rik7Q0g+K1RJTF0lL2VDR2tVJSQwSzssPDghMkdGbW1lIjI0OmtvLlVCb1MvcEIlR2UwIWNvNE8ja2ptS3Vgb0ItUm1rOCw1NEU7U2hxTFdPLzJOQlxKaFVdMUZyZ15rPn4+ZW5kc3RyZWFtCmVuZG9iagoxMiAwIG9iago8PAovRmlsdGVyIFsgL0FTQ0lJODVEZWNvZGUgL0ZsYXRlRGVjb2RlIF0gL0xlbmd0aCAzNzcxCj4+CnN0cmVhbQpHYXUvW2ZsR2gsbmlePzJXaWFjcUFnTjJBTTBXOmY6cl8wLk1QXFNJPG9vJSRAIzlfLjNbPkhEa0ApKVEpYSRDNCwiOjBeUCJLMGZoMlQsWiEjWVAkKV0qdVdbS28kZ1VMdDchMEw+O0dLVUttLXIlMzRQSitEdWBrN2MhcDY2PmZGJi5tbjdNUSpDIj5zNCNGM1BhLylOKUlTL3BQQGwzT2hkX2MwUyosXVkoJFAkNXBZTDNQQ3RfN19iMmNaZD47NSduYl9NUkBmdXNpMEJKJUovYDc9bCF0QUFQUHBkRCYrT2hvalF1Q0MqNyZPNjBrOCw0aTdJcjBHcmdVYSxLVSU6KD9xJ19rbkU1RlMkSC1LbUdsZCVPJkdMP1ZKcDlcJmd0bWJbNyVpX1QvO2VTOVUkM25fZDpYWEtIQkgudGQxWi82X011SGAjUD44OFlhI25yPGhkT08lWk1DO2EiXCguV3M9VDpgc3BZSyRZbGhZYEBbOFNVW1RvSUkmXWAwRE5xJSktTUxKPG8obFxNMCNCMHNCWEdCQ0BQa2lYRmgrYS1SbmBJV2xPbDhUanQuM2FwVS4tS0g2OkZjOCNiRCZCLFtwMCtxRElbRTJzbFplMHUpLz9rIjlsNVI3ZWQ9RXBELCZyJk1VcSxpM0YwSVkpWURbW15CWlwqNi9iUjJaSmU4azc4OVldajRJMHFwXDE8Y04zPUcnLXVxImw8WDVFRmY4J1gsbTwlaThCLFc/L0xQX1xQX05uRTE3Yms4U1ByW14hKFszLVZAcGJMYCFzXCk4W1ckTl8nWWBzMGU3YVYzYy45cSFiRzJVIz4rQHFlJjU+PCJ1SDNXbDc1ZCQiVVZGREUvNk0pSXFjUT9vJDIuKE1oQz4sMCpnMVZGNzZOIW84LT9AZl9LY3VsV2U1ciEpZjdeJ1csSkduKSwzZlFKNT1HS2JEVGVLZFNNLFw4dE5MJlVBV1M0RUJYJXIrdW9wcjU1QTlYNjJDajM6SG5tIWhGJSNWZCEnczZIMGRYbWFCMyFWJ0RiN21cJkBBWj5kOXQ2KXRDW1ZPJWkncF4hISNIQE1wcFs6czczVVxWaEdMLTRmR0ZeZVoyZzYiKSZqIyRuYDpTOjhvNUI0Y25BP2tDYF10XStOQS48ImpjZkMnNjkwQ0AmRzNJcTQ+XixwIUZ0QSZTdSxZaUlPVzchcGZHKDNYYkgrPXAqZ1lkW2ljSlg8Py49MkIiY2hZNiNbPSppSi9QajRGbzVaVSRrMk1Fc15NZl1cP1BVXEo0KGwzYWVEOEJYR0tAPzFkRyxjS09kWyxyUFxRLCpWJCFbYXI0b2JfOEVpK1FbZWQ1YUNCOEpBcUdNST49WE8ubCxwY1c3Wi1cQyMjWC1QLzVPWEo9PGxGLC1MVzlhXXVOMDdROGgyWTdqWFciPVZgPU8xP2dDZkNZTShiNm5mcjkraXIkV0YuLmsiTS1FWCFTRUgwYG5NRWQzPVhjbF5CW041WkdtcGs2Ul8+UnFTWVlLbC5VTTlndDd1aEE9Z0gvN1BmQzV1MFU+IXBOOW9bbFxzKlZEImtdOWtMRkQiUV1yKDcwcChfaSVqPU4malI3JWBOXE1scUVAc1tJRVcncEBfOitCVCtQYE0oc2BrOydBYyU+Iik/VTVSdCRqcDVNSU5OYD41Jl9pPl9SYGpiWUEuSU9NLWVaJT9kPiImbjZRQj1iM2RsKmVeMm43PjRfWGFwKkVxbFRubClgUygzVDFsUzBQdSFxS0JzZy8/L2c+XC5GPjw7WWYvQGE8TFlcN01eTjpPJ0NkNzhBS3AjZUZgW29sKkNBREBIR25Nc3QvbDB0JiFvOFhyKjhMaF4/c0BLWjZQYjM3M0tQOzdNOTc7WnFxX0MvWlMhKXU6bTk6MlI9PzAjOHFxJjM2VHAqNyYuRl45U1dgVkNBPVomcC4kREpnPCRPYU4rYSIqOGdKZ15HWyNDaWZJcm9uPzclM25qZFhlSlVFXTQmY2ddTkM8S00wIjFoUXF1ZDVXZkFLaD5yK20vOWAmKEZpMltZR2xdLUJrQFZzJSMlZWlbOWVyKC9qZVklZ2kkdE9ZKTlsUSZUXUwuRFpwMD4yYSlGSnVhJFxSZVRNQzgmWFpPYllWSlNfbmNQWGchPlxCW1kqRSRgQWJtbDhDTSI1U1FZLz4sUG81IzNyRlVHXV8lVmFjdEs7cik2OitkbjlMQGZEaFZKMSZbb2JeQlgqcSZySERNNGZxNjV1Lm4lWFVda1ZSO3JNYE1AQGZyPWA/RnFXUShKQUI5JzRvRScsXFVMUSsmVUBVNCYxNzMjbjBLOlZJaC5kQy9YdUJsTzlCaEddW1JuK08yPW9zbFI0UlhhaV1mLTJgMGs9czkhYzhzKzBxMiRUJmpBZjdKYykiWjVYTCNlaiNrJVBjWDc/I09HdEVNXWdKXyRsN042VUZaZiU0N3F0aT9gXEMvaFdFISkucDRwOjZPOmA/JVltQmwsInVTajhzQjBtcm8xbj1eYUt1YVEwQXMjZE88U0IyTi1ELj1HPEJxLlxOaWIuVnVtTShAaUtpYy4ucnBvM3VVR00ycl5HcGFkalFkRVQpQDUwS1lwWisuJElCYWBmYVFeWmMycS8vKlRtT1woWGJdXC9uUDomRnUoSTRUJz1OYSQrO25cMDY+RlhjNmFrIlFkbGQ8JkhPWDNoODM6bU9SbjhMNnEqZkYnZWtMSSVJUGkoMGxMPGIiZC1tKC4rVj1CYjRTPkNgKyooT2luK1U3OkMrWz03KU1bZ3EhUDtKNDdDV0lQVFQjP2NdNnAldUM9N1BSM1ZTUV86YFlcKkVMKktrZjlUOFJSSShtW0spYTgkZzlCIyZGNURqcWtwOVVsUiolRk9eKl1Wcko4V2tYTEgkSGRQakMjRFgxbDlaSjpkKk91cDdAdCVgb2NFIlRyL0U+Qy9daWFrOElUN11FdGU2IytcT0MqWXFtbmNXOicuSClZUTViLCtSTmltaFRDJSleKG1wPycuMkw8XCN1QWhsLTZtO11kQlwzSCE0Si4+KlwrWiIyTjlDUVleQCheVEppNnM9OzJGNi0mISpYR0VpMl4vcS9SXyZiIWMpZWspP3JgSklvOjJcOEVII1Jac1M7PjY9SyxGaEd0VTNlL3Vwck9nOSktIWwrX0pldTtXRlk4IyJcb25UO0EtNDttTy5dQGchPSptXlYpIjBYX0JFMi9dM19fVHBMYEhea1VqW2M4IzYhT10nXkknVjhXdGZSQDg/NXVBR2osJzQ7bk9vSWpSUHRlVG8pazFTY2RiVEdCWEFOa0otW0hpKWInL1gjbkA6OidONiJUWmlfWTw5Yk1YayRpOEYhLWA2WHJLWGpCMEJsViU9aXI+YkclUUI2VjwxWDc4NkcuSmJjQ1swVltWLWw3ZHFBUSJsTTROYVVaMl4rSldfIV42N19hQmloUV1RaiZUJmc9dTFjZD9nZlVPaytjclkpKmU8LC1xcUVAVVZdUmAyOFUhKTs1dGJNY0MhX14lW0ssX28wbCVUPVhERWUodHVnVDBWJjhAQHAkXSsmXXJCbi4pcWIuT2VFI1hqJkMoJEckSGhKImdpO11ZUUdAcSZhSFcuOCdJK3NcaiE+TlhBR1lMQjVhcEdkaC8kXTEqPVo0RGQoaUlPSyhEKEprIiJZSGg3MldmUGIzLCFIWGVVO2wlZ2Q2JklAdXNPTC40MiFpOm5aL0lDVUk5SSlVLjBHKz4lZ0pxNlVbKDBpRGJaWz1RWyQwbl9SSmdEZUxFT15PYkE4dS4/JzYockQ9SFVYWydZY0o0bk0mUTMtMS0kMT5ZXlIhaE5rYiJpPyo2VG44MF8sJk5nQGI7NT5pWzFAbjdmRjh0WFJqKlEwSGJfRC46RCxYak1bbXIhaypXSzwkZHIiMSE3YC48XC8pNiUlOWdgPlNaTnR0Oi5JPFYxRm9SIXQvNDFjaTBSbF8wYlVSS25fMypuLy9FU2pYP2NiPXAhPTleQj8taGxPMGVCLVpDLkVhRTgtVE9fI1Y5OyY0cS42Ll5YXGpBcm0yVUFqbCVmaSdiIUFqK2gzW2gqJmdLJTMnVyxVOU0/c15IMl1sMktqQHIwJDRRPDEiUGJqXHIhQE0hLi1rLUFrRm0xXDtPdEZgTStqM2JnTkwnQltQI0NYWUktPD9zOUJxKkInN2k7Wlw1bEs0SkhUZUInZ0lzYFEmWEJETFtkQjE3PUJBWF5xNkMrWFk7SSEnUyJnUVclX2VoUlBrSiZZb1pGbFcoNnMmRnBTTFFVM21kTEA1RyhOQzdRO05vNkppTkVzKCdDa05pZzo/KlVfSDU0K01MPnJbJSZgcTw2TUE2XmQxOVpIYlJyYV05OWxxYlhPX1oiKE4vYVE5UTxuO1RmJ3NzQjZtNzNvWUBcc2QlW3U4QTtyYjBsXlI3RjohW2YzZ0RtQEEndU9HQkhKaVYlKj5mOSQvI2RmXidWbjdRInVkRWY8ajV1U1lpNyFWWmduITVbJjNyYmgjP2RXM0lJdDlzL3FpXS5dIjlMKU0lND9YWGFkXCYsbURdKFYyIl0xNlxRaG4uYSpJN3JqX3NDdFVNP3EoNURsLnFJRXBDKiI1JUwtajgxRGxTQCdHYmNkaGI8YSNzQUZYRW87O3AzLUgicEQ8IUdkJXUjSyRAVCMxNHVKbnRcOm8kXi1YNk9GTDU8LVJfcDUuPGgsVXVbTVBgRm9Pc1REKWxQWy9jTConcWhTaSxtMVdkLjY8MkJ1ZWQ2Ri9BOVJDZ181LGhCNiZmXSpgOl5KZ1xSMi5AVzA9ZWVgTUxVTlEnNERIYEQ/TiptMT1SWFxKQEI5WGluXFUvS2FdIy8zbycwQWZxbmBbcVMiJmQ3RVRQS19GXVoxaXE1QW8iLlE2QVckUy9pK3BCckxgaCM1Kmk+NC9MNFdpUVQwcEphdG4jMmkhSSJpOVNEby80KlFfVzxbdGtIYzVsXDhxPV06QiE5ZnFWZFcmb102I3BAZzFCfj5lbmRzdHJlYW0KZW5kb2JqCjEzIDAgb2JqCjw8Ci9GaWx0ZXIgWyAvQVNDSUk4NURlY29kZSAvRmxhdGVEZWNvZGUgXSAvTGVuZ3RoIDI5ODYKPj4Kc3RyZWFtCkdiITtmRC0sSyUnKW5KMDBrV15tZmt0YVxxMGJKNS4rISE9PiJbNVRrRlUtVU1DZkdVZ0loREdTLE4jKEFEKWooM1dyMixCLnBXQkNqQlZMUlYxYiMzPFgwci1JJ2pyIiN1bWhYInNnMV9YbmImQ1VsLUkmI1tuKFt1azYjYS5qNUtOcFZORCJjR0ZbI29rQVVVRHQ/Y00uOmg2aislcWsoKEVBSkJQOUUvbitvayJcOjA6XHFfVzdUWVFGKyMuKXNfRltORERqbzlkI2NHW2hTRTp0WlJkSVZUXiZNVmZmYURqLD5uay8hLT88cUY/Z0s3YnNkQTNAJ0A1UShmOFk6dEMoU28sPmAuJS1jM1dvXiIoMkQtXSNqZ2tTck9FYzY8RGVYMz5DL05rNVJwKWFiSTVuQiZPbjVsM2JFVixYTCYoaF9RTUlwWjpxcENQY04iQDdQSkJbZ0phV2cxO1khO3BnNVZdYyZKQzhAKnNoWS1WbFVCMFlkPCV0WGBdOUNGbXVqVmcuayVbcSdOQms5J0RSVlsma0dGPy1MR0BqXFJVQSViIkcnb28wLE47dSpWNDReMzw/QFZPQE9TKm9ZOEdja3NGTmtNRlRQMEghSF1hJGAwPUlDT2FiRSQ9aV1BXj4la2tiTSM7KzRkT2dVSkJ1T0MhdDtPR2otKkBZSjUpX0JCRHJHTy5lZj8/NmUjRnFfcEc2dWYrVyJQUlJvJDBoZV1fZi4rXDUrPS5vW04mcTRVSEcuNCtPbl1nQExySV09Yi9CQzpgPWw8cyxAM1VRUF1wbSdBMDY1ZCRjbzNQPGQ7PU5ZOidwQE9aQlIhOmNyRUssYSxpISM5UTdSKW5TI2hRbzgoKFwiMEpIZ2ksQ01NK3RyanVaOzJbVloyPihIb2hSQFNFSjJvWGMuP2lQPEAtcXJtOkA4N190JFctQVVtbiY8Wl5wYFBLMCFOLm9hVEpfZUpnI09DNSQsJDk1KlQuKjVSMiZDdTEkQCgva1lrR2pnTEpRMSlnb2ojUlRmbDBxRFxFUjNsOGdlNWZMcVtIOFlzckxUUlU5LEQ+YnIoR3NmK0NpR1dVVXI/UixxVztAOTRnLWcpSFNOLmwja18sPFQvJU9GZyZPc3FSbUhyTFZsX1BmcjZiVl8yTGxXNk4sOmQ4QF5MZEIkdEZSQ3FLYURwVnVdU3IrIykyXjI9SksjVko+alBlUC5TOlNDTT5SX0crUCZfPS85TXIqZHRFaTZwb19DbEpzMDZmU10lMENxVG9BJTVvWyIidTAyTjhba1FSRTRQIVE8QTBRcS9MdWRXcWE1PzpnPUo0X3RCUClvNyRlIl8vVDNZPmtqRzI1OyU/MElxRHE2IlYuXT5OUkQ0NSJSY0dJQHQ1LlRcPDhyZyhbRTQiIzApRUZkTVAjLUFzZmlRMlxDN29FRU07aGg8K2VJJE4iK1tbIi9WJUpKSUVBKFJHYXU6UUFiUGVxSUBMJF1aamMrVmNgWE9gJkRxa1tQaF1kNVxMTVpcajVyN1lYOm5hJEpfNDRXa3A/R3NUaz5mXytiQihZWCRJTzI9RW9ZIkdcTTFEWiEwV0xQK206QitLUSUoQmtaPFhLLy1PJEtYJ2I3R0FmT0tGJmBRLT49Xi0jZHI5MTdxLT0sUmtPR0dIZztZX1dzUD0pYzpYc0FBWmdkVCpwRDQmR147cz91JWNVTCMuSmtZYT5gJ1llZF04JTdAQVBPbENpMmUxbm8ubTclW2hoMVpQX1J0dGZfW1kibHInPV1TXVhFSjstR1ohbWZXTzczNGxmZmVcJGFqUC0zYyJBU2ZhcEM1RG9lajg8OGRWdWBwMyFacE1tbjRLUmNoRSQsUThvQy5eYUhWWC4mNGlFaEBjb3REbVIxQk5ibkg8WyknIkVaI0tOVlJQUmw9NUo1O2VkWj1ycFxtN0tPRVNoP0omISZqXyZmamBMYEEsZ1BDOXU9KWMvXjw+VzxfbGg+JWtrLD4jSCRiJHI4S2ZaZ2M5SWEoTmNLSXAwb2JpTDwhSytMR091OSZlOjpqO0JsT3RNWEQ5SDZzbnU3UixjODdULW83U2NCWTBLXktFY0RHUWlwWFgtK11zVFdqOyI8UUE5Yz05bkNpVS1MVi5NWFNlTTVGayhIZXU8cEEsKGMnLzk0R1RPJ0hqTVIrbzgwRiZmSGlfYzRcUllZZkU4IyZYOydOMmg9YC4wNi1aUV5wVTc9dWxUQWpzZmokRyNIKFRiLipRJDJPJWhBITglLlxFPilSMmY4dW47Vysxb2teOEBOUHFeUTNeLFJPP0NjbTRcayVaPGw+PT1bXTspUGptMShccFxLXi8mZVtKJlA/WEgsTGs7dDZhT2I6JEA6Sz80VSgwTCd0SDtCSixbM3NoVyFKOF9IMTY4b00+YCtFOFUwOyFEKC8qPUBsTkxQQ0JkRjY6NjYzJUkyMUZFZSk9XmR1LS1eLjhaYWc2RDAhcUQiJWFSPz5NZHBtaWZqJE1xTTIzK1JuWXBFTXBrV3BAL00qQ182STVGc1ZdbGRoYG9gbGtcXE8sWS5AXWosRVY+dTg0aikublo8QGk7bVA2L2FNSzphL2tKMzgwLDc/SlcmRWJiPUwsaGIiJStfSzklMzBMTFlWUGxTOG5gKk0kMHA/Xk9oUUQ+XHFxKXNXO0c/NStpTWJpWFI7Ty5cUDhWa211WSt0IzQ6ZktlQWgwT3FqRUA4OFsjUlA6Sldlcj1kLCorZ11mSmJDV3NzKjdOU0dQTVQrK3BpbzFUI09MWFpESDYxIjBOLU1FbjdmPCpWNFtLbydXKzEyYFhHNDROM25bUyNlZSQjZVgtQVdMN0MtMG8zNUBcXSliNSVaJjJZKUJMRGRdOE8zQmsrPEdyUlRQVFw9Ny5JJWJrTGZYXCtaTUMmTz4sYzdFUyotNzhOQ1JgTTtaLDRtZEQrMTItIi9NaEliQWNNRyUoMSxwRF0pTW01U1BybVFSZis9JnBxUSpQZFElLFYsNjc9PStDK0NqMyguM1JCLGhdcydLcGZaWzJJZEJqcjJQOEgxZicmKDl0PzZrTCZpR2JANFllIjxTJlt0O2I8TDNOJjpydCMuW1E0Y1o/RSY+SmMlOUczPGNGS1o7bjptbVNXYyRDR2ZzIV5DREZLOyVGOW1UNm5XdS5EWCEkJTtpRzlHJ0E8R0pmOWs7cF9EO2NrK20tJ19gWlVWXGtmYV0yJC5OLXJFZD0jQkFCcjYybmNaKmE7LSZJMWsia3BvNyNVKVQvSlNmPGo3XC8iPlBQNlRhI049TWRwI2dLQj1iNW1dXUAkYEIjbVNSNCpKZVVgYEVlbDAnKlBfKmo7WmxsPnI/QywtPjhPSVYtVDA8YXU1VXJbVTBwVThKWCYoPEQmYlx1YDorNFZPcilbVyI1OFNLMGtTa21Cc0wya1xwI2otWjszSSU5VjdwZ0gtPUk3J2ghNT4lWzltWmc/LVRaIk4raTE7UEYkOGZUP1FxLzwhcGlqbD5Ma1E0WEpra3NQPSlDMDRJXDg0a1Q3IU0yZlVkPGdYbWhybl0mdG91aG9nOUFyUk9wImhGXGw3IUJPODw4TVFdWWZXP01WSGBIYHU3LyYjKk9VUToxPiRCJExyKi07byx0Ij1JXGZQNktLUiZRZi9cci1jOFJVKipmPUYwTlErISp1PCooT0U6Q1MtLTUjR11UIzxgI2UkZTVhKCpEXEVFRidZLEU7VnBALllNOFVeMVtJWU1aLi83cHBjYV5zV25jNGRJVlNYIzNrQ25CYlhfUF5fQD4/PlknSHFbXzFfYkVLbG88W1dVJF5UbDM9X28qT2NLa2VyZSlaMVsmWi09WXJcNWhHNiglTHFJblpQaVAhUDhfJSFsQC8lVylrYkFbUEtDM2tMbzc7cm5LYlpXb0xidEJjLUpzNGFpWlhyVmZfTHFsWi9SQTQ1PCFTbEJnUSUoQEl1Y1okOXRdfj5lbmRzdHJlYW0KZW5kb2JqCnhyZWYKMCAxNAowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAwNjEgMDAwMDAgbiAKMDAwMDAwMDExMiAwMDAwMCBuIAowMDAwMDAwMjE5IDAwMDAwIG4gCjAwMDAwMDAzMzEgMDAwMDAgbiAKMDAwMDAwMDUzNiAwMDAwMCBuIAowMDAwMDAwNzQxIDAwMDAwIG4gCjAwMDAwMDA4NTYgMDAwMDAgbiAKMDAwMDAwMTA2MSAwMDAwMCBuIAowMDAwMDAxMTMwIDAwMDAwIG4gCjAwMDAwMDE0MTAgMDAwMDAgbiAKMDAwMDAwMTQ4MiAwMDAwMCBuIAowMDAwMDA3MTMwIDAwMDAwIG4gCjAwMDAwMTA5OTMgMDAwMDAgbiAKdHJhaWxlcgo8PAovSUQgCls8ZTM1NTFhZTNlYmJjNmExMGQzNWMyMzlmNmVhNDJkYzc+PGUzNTUxYWUzZWJiYzZhMTBkMzVjMjM5ZjZlYTQyZGM3Pl0KJSBSZXBvcnRMYWIgZ2VuZXJhdGVkIFBERiBkb2N1bWVudCAtLSBkaWdlc3QgKG9wZW5zb3VyY2UpCgovSW5mbyA5IDAgUgovUm9vdCA4IDAgUgovU2l6ZSAxNAo+PgpzdGFydHhyZWYKMTQwNzEKJSVFT0YK" download="FermentIQ_Business_Plan_2026.pdf" style="display:inline-block"><button class="btn-sec" style="background:rgba(255,255,255,0.1);color:#fff;border-color:rgba(255,255,255,0.3)">Download Brochure</button></a>
             </div>
           </div>
         </div>
@@ -2982,7 +3171,6 @@ tr:hover td{background:var(--bg2)}
             <div style="display:flex;flex-direction:column;gap:16px">
               <div class="card" style="background:linear-gradient(135deg,rgba(5,150,105,0.06),rgba(13,148,136,0.04));border-color:rgba(5,150,105,0.2)">
                 <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
-                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=60&h=60&fit=crop&q=80" alt="Rajashaker" style="width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid var(--g4)"/>
                   <div>
                     <div style="font-family:var(--fh);font-size:.88rem;font-weight:800;color:var(--tx1)">Rajashaker Reddy Thamira</div>
                     <div style="font-size:.7rem;color:var(--g4);font-weight:600">Founder & CEO</div>
