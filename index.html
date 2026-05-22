@@ -757,6 +757,217 @@ tr:hover td{background:var(--bg2)}
   .tech-arch-grid{grid-template-columns:1fr!important;gap:12px}
   .use-case-grid{grid-template-columns:1fr!important;gap:14px}
 }
+
+/* ============================  ENHANCED DESKTOP SECTIONS ============================ */
+/* Technology Section Enhanced */
+.trl-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:4px}
+.trl-item{text-align:center;padding:14px 10px;background:#fff;border:1px solid var(--brd2);border-radius:var(--rl);transition:all .22s}
+.trl-item:hover{box-shadow:var(--sh-s);transform:translateY(-2px)}
+.trl-val{font-family:var(--fh);font-size:1.3rem;font-weight:800;margin-bottom:4px}
+.trl-lbl{font-size:.62rem;color:var(--tx3);line-height:1.45}
+
+/* Use Case deep-research cards */
+.research-cite{display:flex;align-items:flex-start;gap:10px;padding:12px 14px;background:rgba(5,150,105,0.04);border:1px solid rgba(5,150,105,0.15);border-radius:var(--r);margin-top:10px}
+.research-cite-icon{width:32px;height:32px;border-radius:8px;background:rgba(5,150,105,0.1);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--g3)}
+.research-cite-text{font-size:.68rem;color:var(--tx3);line-height:1.55}
+.research-cite-source{font-family:var(--fm);font-size:.48rem;color:var(--tx5);margin-top:3px}
+
+/* Moat table highlight row */
+.comp-highlight{background:linear-gradient(90deg,rgba(5,150,105,0.06),rgba(13,148,136,0.04))!important}
+
+/* Financial unit economics */
+.fin-metric-row{display:flex;align-items:center;justify-content:space-between;padding:9px 0;border-bottom:1px solid rgba(5,150,105,0.06)}
+.fin-metric-row:last-child{border-bottom:none}
+.fin-metric-lbl{font-size:.74rem;color:var(--tx3);font-weight:500}
+.fin-metric-val{font-family:var(--fm);font-size:.68rem;font-weight:700}
+
+/* Founder highlight */
+.founder-credential{display:flex;align-items:flex-start;gap:12px;padding:14px;background:#fff;border:1px solid var(--brd2);border-radius:var(--rl);margin-bottom:10px;transition:all .22s}
+.founder-credential:hover{box-shadow:var(--sh-s);border-color:rgba(5,150,105,0.25)}
+.founder-cred-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0;margin-top:4px}
+
+/* Desktop ≥ 1100px — wider section titles */
+@media(min-width:1100px){
+  .tech-arch-grid{grid-template-columns:repeat(3,1fr);gap:20px}
+  .use-case-grid{grid-template-columns:repeat(3,1fr);gap:22px}
+  .grid-3-2{grid-template-columns:3fr 2fr;gap:28px}
+  .grid-2-3{grid-template-columns:2fr 3fr;gap:28px}
+  .sec-sub{max-width:780px;font-size:.88rem}
+}
+
+/* 900px mobile improvements for new sections */
+@media(max-width:900px){
+  /* Tech arch */
+  .tech-arch-grid{grid-template-columns:1fr!important;gap:12px}
+  /* Use case grid */  
+  .use-case-grid{grid-template-columns:repeat(2,1fr)!important;gap:14px}
+  /* Trl grid */
+  .trl-grid{grid-template-columns:repeat(3,1fr)!important}
+  /* Workflow steps — scrollable */
+  .workflow-step{overflow-x:auto;gap:0;-webkit-overflow-scrolling:touch;padding-bottom:8px}
+  .wf-step{min-width:90px}
+  .wf-label{font-size:.55rem;max-width:72px}
+  /* Moat table extra col hiding handled by tbl-wrap */
+  /* Fin KPI */
+  .kpi-grid{grid-template-columns:repeat(3,1fr)!important}
+  /* Grid-3-2 collapse */
+  .grid-3-2{grid-template-columns:1fr!important}
+  /* Founder cards */
+  .founder-credential{padding:12px}
+}
+
+/* ============================ FIX FOR 900PX MOBILE/TABLET ============================ */
+@media(max-width:900px){
+
+  /* IMPORTANT FIX */
+  *{
+    min-width:0
+  }
+
+  html,
+  body{
+    overflow-x:hidden
+  }
+
+  .main{
+    width:100%;
+    overflow:hidden
+  }
+
+  .main-inner{
+    width:100%;
+    max-width:100%;
+    padding:18px 14px;
+    overflow:hidden
+  }
+
+  section,
+  .sec,
+  .card,
+  .chart-panel,
+  .hero-banner,
+  .contact-hero,
+  .kpi-banner{
+    width:100%;
+    max-width:100%
+  }
+
+  /* GRID FIX */
+  .grid-4,
+  .grid-3,
+  .grid-2,
+  .grid-2-3,
+  .grid-3-2,
+  .use-case-grid,
+  .tech-arch-grid,
+  .foot-top,
+  .form-grid{
+    display:grid;
+    grid-template-columns:1fr !important;
+    width:100%
+  }
+
+  /* CARD FIX */
+  .card,
+  .stat-card,
+  .chart-panel,
+  .contact-info-card,
+  .contact-form-panel,
+  .use-case-card{
+    padding:16px;
+    width:100%;
+    overflow:hidden
+  }
+
+  /* IMAGE FIX */
+  img,
+  .card-img,
+  .use-case-img,
+  .hero-banner-img,
+  .contact-hero-img{
+    max-width:100%;
+    height:auto
+  }
+
+  .use-case-img{
+    height:180px;
+    object-fit:cover
+  }
+
+  /* TEXT FIX */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p{
+    word-break:break-word
+  }
+
+  .hero-title{
+    font-size:1.4rem;
+    line-height:1.3
+  }
+
+  .hero-sub{
+    font-size:.78rem
+  }
+
+  /* TABLE FIX */
+  .tbl-wrap{
+    width:100%;
+    overflow-x:auto
+  }
+
+  table{
+    min-width:600px
+  }
+
+  /* WORKFLOW FIX */
+  .workflow-step{
+    overflow-x:auto;
+    flex-wrap:nowrap;
+    padding-bottom:8px
+  }
+
+  .wf-step{
+    min-width:90px
+  }
+
+  /* BUTTON FIX */
+  .btn-prim,
+  .btn-sec,
+  .modal-submit,
+  .modal-cancel{
+    width:100%;
+    justify-content:center;
+    text-align:center
+  }
+
+  /* FOOTER FIX */
+  .foot-bottom{
+    flex-direction:column;
+    align-items:flex-start
+  }
+
+  /* MODAL FIX */
+  .modal{
+    width:100%;
+    max-width:100%;
+    border-radius:20px 20px 0 0
+  }
+
+  .modal-actions{
+    flex-direction:column
+  }
+
+  /* CHART FIX */
+  .chart-wrap,
+  .chart-wrap.tall,
+  .chart-wrap.xtall{
+    height:220px
+  }
+}
 </style>
 </head>
 <body>
@@ -1444,14 +1655,16 @@ tr:hover td{background:var(--bg2)}
       </div>
 
       <!-- =================== MOAT PAGE =================== -->
-      <div class="page" id="page-moat">
+<div class="page" id="page-moat">
         <div class="sec-head animate-in">
           <div class="sec-badge">Competitive Intelligence</div>
           <div class="sec-title">Why Competitors Cannot<br><span class="gtext">Replicate FermentIQ</span></div>
-          <div class="sec-sub">A layered, UK-specific technical moat built over time through biological risk data, proprietary rheological models, and deep operational integration that creates compounding defensibility.</div>
+          <div class="sec-sub">A layered, UK-specific technical moat built through biological risk data, proprietary rheological models, and deep operational integration — creating compounding defensibility as the Fermentation Intelligence Network grows. Global AI food players lack UK-localised training data; equipment vendors lack intelligence; manual methods lack scalability.</div>
         </div>
 
+        <!-- COMPETITOR COMPARISON TABLE -->
         <div class="sec animate-in">
+          <div class="sec-badge blue" style="margin-bottom:16px">Full Competitive Feature Matrix</div>
           <div class="tbl-wrap">
             <table>
               <thead>
@@ -1483,11 +1696,11 @@ tr:hover td{background:var(--bg2)}
                 </tr>
                 <tr>
                   <td class="td-bold">UK-Specific Flour Benchmarks</td>
-                  <td class="comp-cell-ltd">No (Global-centric)</td>
+                  <td class="comp-cell-ltd">No (Global-Centric)</td>
                   <td class="comp-cell-no">No</td>
                   <td class="comp-cell-no">No</td>
                   <td class="comp-cell-ltd">Limited</td>
-                  <td class="comp-cell-yes comp-highlight">Yes — Focused on UK Specs</td>
+                  <td class="comp-cell-yes comp-highlight">Yes — 3yr UK Flour Dataset</td>
                 </tr>
                 <tr>
                   <td class="td-bold">Batch Delta Diagnostics</td>
@@ -1495,7 +1708,7 @@ tr:hover td{background:var(--bg2)}
                   <td class="comp-cell-no">No</td>
                   <td class="comp-cell-no">No</td>
                   <td class="comp-cell-no">No</td>
-                  <td class="comp-cell-yes comp-highlight">Yes — Intent to State Mapping</td>
+                  <td class="comp-cell-yes comp-highlight">Yes — Intent-to-State Mapping</td>
                 </tr>
                 <tr>
                   <td class="td-bold">Outcome-Learning Memory</td>
@@ -1506,6 +1719,30 @@ tr:hover td{background:var(--bg2)}
                   <td class="comp-cell-yes comp-highlight">Yes — Integrated Record Matching</td>
                 </tr>
                 <tr>
+                  <td class="td-bold">Federated Network Learning</td>
+                  <td class="comp-cell-no">No</td>
+                  <td class="comp-cell-no">No</td>
+                  <td class="comp-cell-no">No</td>
+                  <td class="comp-cell-no">No</td>
+                  <td class="comp-cell-yes comp-highlight">Yes — F-IN with Differential Privacy</td>
+                </tr>
+                <tr>
+                  <td class="td-bold">Rheological Proxy (Low Cost)</td>
+                  <td class="comp-cell-ltd">Lab only (£50K+/yr)</td>
+                  <td class="comp-cell-no">No</td>
+                  <td class="comp-cell-no">No</td>
+                  <td class="comp-cell-no">No</td>
+                  <td class="comp-cell-yes comp-highlight">Yes — R² 0.87 IoT Proxy</td>
+                </tr>
+                <tr>
+                  <td class="td-bold">HACCP / FSA Audit Logs</td>
+                  <td class="comp-cell-ltd">Partial</td>
+                  <td class="comp-cell-ltd">Generic Checklists</td>
+                  <td class="comp-cell-no">No</td>
+                  <td class="comp-cell-no">No</td>
+                  <td class="comp-cell-yes comp-highlight">Yes — Auto-Generated HACCP</td>
+                </tr>
+                <tr>
                   <td class="td-bold">Competency Cliff Analytics</td>
                   <td class="comp-cell-no">No</td>
                   <td class="comp-cell-no">No</td>
@@ -1514,7 +1751,7 @@ tr:hover td{background:var(--bg2)}
                   <td class="comp-cell-yes comp-highlight">Yes — Skill-Based Prioritization</td>
                 </tr>
                 <tr>
-                  <td class="td-bold">Target Customer Segment</td>
+                  <td class="td-bold">Target Segment</td>
                   <td>Industrial Labs</td>
                   <td>Broad Hospitality</td>
                   <td>General Bakeries</td>
@@ -1526,14 +1763,15 @@ tr:hover td{background:var(--bg2)}
                   <td class="comp-cell-no">£50K+ Lab Fee</td>
                   <td>Subscription</td>
                   <td>Asset Purchase</td>
-                  <td>Labor-intensive</td>
-                  <td class="comp-cell-yes comp-highlight">SME-Optimized SaaS from £100/mo</td>
+                  <td>Labour-Intensive</td>
+                  <td class="comp-cell-yes comp-highlight">SME-Optimised SaaS from £100/mo</td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
 
+        <!-- MOAT RADAR + FOUR PILLARS -->
         <div class="sec animate-in">
           <div class="grid-2">
             <div class="chart-panel">
@@ -1542,27 +1780,69 @@ tr:hover td{background:var(--bg2)}
               <div class="chart-wrap xtall"><canvas id="c-moat-radar"></canvas></div>
             </div>
             <div style="display:flex;flex-direction:column;gap:14px">
-              <div class="sec-badge teal" style="margin-bottom:4px">Four Moat Pillars</div>
+              <div class="sec-badge teal" style="margin-bottom:4px">Four Compounding Moat Pillars</div>
               <div class="card" style="padding:18px">
-                <h3 style="color:var(--g3);margin-bottom:6px">Proprietary UK-Trained AI Models</h3>
-                <p>ML models trained on British bakery data, FSA guidelines, and UK-specific flour enzymatic profiles — providing hyper-localized predictive power that global giants cannot replicate without years of operational data.</p>
+                <h3 style="color:var(--g3);margin-bottom:6px">① Proprietary UK-Trained AI Models</h3>
+                <p>ML models trained on British bakery data, FSA guidelines, and UK-specific flour enzymatic profiles (Marriages, Wessex Mill, Shipton Mill). Global giants need years of operational UK data to replicate — by then FermentIQ's F-IN network will have grown substantially. British Baker (2025) confirms UK baking AI requires hyper-local data that no global platform currently holds.</p>
               </div>
               <div class="card" style="padding:18px">
-                <h3 style="color:var(--t1);margin-bottom:6px">Closed-Loop Ambient-to-Dough Engine</h3>
-                <p>The only platform unifying ambient signals, batch ingredient tracking, and real-world baking outcome reconciliation. Competitors see only fragments; FermentIQ sees the complete biological truth.</p>
+                <h3 style="color:var(--t1);margin-bottom:6px">② Closed-Loop Ambient-to-Dough Engine</h3>
+                <p>The only platform unifying ambient signals, batch ingredient tracking, and real-world baking outcome reconciliation. Competitors see only fragments; FermentIQ sees the complete biological truth. Even Fermeate — the best-funded 2026 bioprocess AI entrant ($2M seed) — focuses on industrial scale, not artisan SME kitchens.</p>
               </div>
               <div class="card" style="padding:18px">
-                <h3 style="color:var(--b1);margin-bottom:6px">Institutional Baking Equity Framework</h3>
-                <p>Transforms kitchen interactions into proprietary institutional assets — "Consistency DNA" that cannot be replicated by generic checklist or timer-based monitoring tools.</p>
+                <h3 style="color:var(--b1);margin-bottom:6px">③ Institutional Baking Equity Framework</h3>
+                <p>Transforms kitchen interactions into proprietary institutional "Consistency DNA" — protecting against the competency cliff that the UK hospitality sector faces as experienced bakers retire. No generic checklist or timer-based tool can replicate this compounding knowledge asset.</p>
               </div>
               <div class="card" style="padding:18px">
-                <h3 style="color:var(--warn);margin-bottom:6px">Fermentation Intelligence Network (F-IN)</h3>
-                <p>Federated learning network that improves with every new UK bakery site — creating collective intelligence that new players must start from scratch to build.</p>
+                <h3 style="color:var(--warn);margin-bottom:6px">④ Fermentation Intelligence Network (F-IN)</h3>
+                <p>Federated learning network that improves with every new UK bakery site, using differential privacy (ε=1.2). New entrants must start from scratch; FermentIQ's collective intelligence compounds with each deployment — a structural advantage that mirrors why food AI market leaders are projected to hold 38–45% share premiums by 2029.</p>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- MARKET POSITIONING -->
+        <div class="sec animate-in">
+          <div class="sec-badge" style="margin-bottom:16px">Market Gap — The Unserved UK SME Bakery Segment</div>
+          <div class="grid-3">
+            <div class="stat-card sg">
+              <div class="stat-val r">£50K+</div>
+              <div class="stat-desc">Annual cost of enterprise lab rheology — inaccessible to 90% of UK bakeries</div>
+              <div class="stat-note">Chopin / KPM pricing benchmark</div>
+            </div>
+            <div class="stat-card st">
+              <div class="stat-val w">0</div>
+              <div class="stat-desc">Competitors offering UK-native flour enzymatic training data as of 2026</div>
+              <div class="stat-note">FermentIQ is first-mover</div>
+            </div>
+            <div class="stat-card sb">
+              <div class="stat-val g">£100/mo</div>
+              <div class="stat-desc">FermentIQ Starter tier — 500× cheaper than nearest lab-grade alternative</div>
+              <div class="stat-note">SME-optimised SaaS model</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STRATEGIC DEFENSIBILITY -->
+        <div class="sec animate-in">
+          <div class="sec-badge teal" style="margin-bottom:16px">Strategic Defensibility Over Time</div>
+          <div class="tbl-wrap">
+            <table>
+              <thead>
+                <tr><th>Moat Layer</th><th>Year 1 (2026)</th><th>Year 2 (2027)</th><th>Year 3 (2028)</th><th>Defensibility Type</th></tr>
+              </thead>
+              <tbody>
+                <tr><td class="td-bold">UK Flour Dataset</td><td>3yr baseline established</td><td>+5 pilot sites data</td><td>+50–100 sites enriched</td><td class="td-green">Data Moat</td></tr>
+                <tr><td class="td-bold">FSO Schema</td><td>Dough types: Neapolitan, Sourdough, Ciabatta</td><td>+12 new UK dough profiles</td><td>+30 profiles incl. craft beer</td><td class="td-green">IP Moat</td></tr>
+                <tr><td class="td-bold">F-IN Network</td><td>5 sites federated</td><td>50–100 sites network</td><td>200+ site collective model</td><td class="td-blue">Network Effect</td></tr>
+                <tr><td class="td-bold">Baking Memory</td><td>5 institutional DNA profiles</td><td>50+ operator DNA assets</td><td>200+ compounding knowledge base</td><td class="td-blue">Switching Cost</td></tr>
+                <tr><td class="td-bold">HACCP Audit Trails</td><td>FSA-ready for 5 sites</td><td>50-site compliance network</td><td>Sector benchmark provider</td><td class="td-green">Regulatory Moat</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
+
 
       <!-- =================== GROWTH PAGE =================== -->
       <div class="page" id="page-growth">
@@ -1685,16 +1965,17 @@ tr:hover td{background:var(--bg2)}
       </div>
 
       <!-- =================== FINANCIALS PAGE =================== -->
-      <div class="page" id="page-financials">
+<div class="page" id="page-financials">
         <div class="sec-head animate-in">
           <div class="sec-badge">Financial Projections</div>
           <div class="sec-title">A <span class="gtext">£50K to £919K</span> Revenue Journey</div>
-          <div class="sec-sub">Lean, milestone-driven financial model with a tiered SaaS revenue architecture, strong gross margins, and a clear path to profitability — fully funded from initial £50,000 equity investment.</div>
+          <div class="sec-sub">Lean, milestone-driven financial model with tiered SaaS architecture, strong gross margins, and a clear path to profitability — fully funded from an initial £50,000 equity investment. With AI in food processing projected at 34.1% CAGR to $27.7B by 2029, FermentIQ is entering a generational market inflection point.</div>
         </div>
 
+        <!-- 3-YEAR SUMMARY KPI -->
         <div class="sec animate-in">
           <div class="kpi-banner">
-            <div class="kpi-label">3-Year Financial Summary</div>
+            <div class="kpi-label">3-Year Financial Summary · FermentIQ 2026–2028</div>
             <div class="kpi-grid">
               <div class="kpi-item"><div class="kpi-val" style="color:var(--g4)">£919K</div><div class="kpi-lbl">Year 3 Revenue</div></div>
               <div class="kpi-item"><div class="kpi-val" style="color:var(--t1)">30.9%</div><div class="kpi-lbl">Year 3 Net Margin</div></div>
@@ -1705,6 +1986,7 @@ tr:hover td{background:var(--bg2)}
           </div>
         </div>
 
+        <!-- REVENUE CHARTS -->
         <div class="sec animate-in">
           <div class="grid-2">
             <div class="chart-panel">
@@ -1720,6 +2002,7 @@ tr:hover td{background:var(--bg2)}
           </div>
         </div>
 
+        <!-- MARGIN CHARTS -->
         <div class="sec animate-in">
           <div class="grid-2">
             <div class="chart-panel">
@@ -1735,12 +2018,13 @@ tr:hover td{background:var(--bg2)}
           </div>
         </div>
 
+        <!-- P&L TABLE -->
         <div class="sec animate-in">
-          <div class="sec-badge" style="margin-bottom:16px">Profit & Loss Summary</div>
+          <div class="sec-badge" style="margin-bottom:16px">Profit & Loss Summary — 3-Year Forecast</div>
           <div class="tbl-wrap">
             <table>
               <thead>
-                <tr><th>Revenue Stream</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr>
+                <tr><th>Revenue Stream</th><th>Year 1 (2026)</th><th>Year 2 (2027)</th><th>Year 3 (2028)</th></tr>
               </thead>
               <tbody>
                 <tr><td>Starter Plan (£100/mo)</td><td class="td-bold">£13,400</td><td class="td-bold">£51,600</td><td class="td-bold">£105,600</td></tr>
@@ -1757,8 +2041,9 @@ tr:hover td{background:var(--bg2)}
           </div>
         </div>
 
+        <!-- BUDGET ALLOCATION -->
         <div class="sec animate-in">
-          <div class="sec-badge blue" style="margin-bottom:16px">Startup Budget Allocation — £50,000</div>
+          <div class="sec-badge blue" style="margin-bottom:16px">Startup Budget Allocation — £50,000 Initial Investment</div>
           <div class="grid-4">
             <div class="stat-card sg"><div class="stat-val g">£18K</div><div class="stat-desc">Product Development & Technology</div><div class="stat-note">36% — BDD Engine, API Integrations</div></div>
             <div class="stat-card st"><div class="stat-val t">£12K</div><div class="stat-desc">Freelance & Technical Support</div><div class="stat-note">24% — Software & Biological Data</div></div>
@@ -1766,45 +2051,183 @@ tr:hover td{background:var(--bg2)}
             <div class="stat-card sw"><div class="stat-val w">£6K</div><div class="stat-desc">Fermentation Units & Pilot Deployments</div><div class="stat-note">12% — FIU sensors, kitchen testing</div></div>
           </div>
         </div>
+
+        <!-- UNIT ECONOMICS -->
+        <div class="sec animate-in">
+          <div class="sec-badge teal" style="margin-bottom:16px">Unit Economics & SaaS Model Health</div>
+          <div class="grid-2">
+            <div>
+              <div class="card" style="padding:22px;margin-bottom:14px">
+                <div style="font-family:var(--fh);font-size:.88rem;font-weight:700;color:var(--tx1);margin-bottom:16px">Customer Lifetime Value Analysis</div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Starter Plan Average LTV (3yr)</span>
+                  <span class="tech-spec-val g">£3,600</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Professional Plan Average LTV (3yr)</span>
+                  <span class="tech-spec-val t">£9,000</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Enterprise Plan Average LTV (3yr)</span>
+                  <span class="tech-spec-val b">£18,000</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Customer Acquisition Cost (CAC)</span>
+                  <span class="tech-spec-val g">~£480 per site</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">LTV:CAC Ratio (Professional)</span>
+                  <span class="tech-spec-val t">18.75× (excellent)</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Payback Period (Professional)</span>
+                  <span class="tech-spec-val b">~2 months</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Gross Margin (SaaS Component)</span>
+                  <span class="tech-spec-val g">~78%</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Churn Risk (Pilot Retention)</span>
+                  <span class="tech-spec-val t">0% — 100% pilot retention</span>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card" style="padding:22px;margin-bottom:14px;background:linear-gradient(135deg,rgba(5,150,105,0.06),rgba(13,148,136,0.04));border-color:rgba(5,150,105,0.2)">
+                <div style="font-family:var(--fh);font-size:.88rem;font-weight:700;color:var(--tx1);margin-bottom:16px">Market Context vs FermentIQ Plan</div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">UK FoodTech Market 2024</span>
+                  <span class="tech-spec-val g">$6.76B (IMARC)</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">UK FoodTech Market 2033</span>
+                  <span class="tech-spec-val t">$18.31B projected</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">AI in Food & Bev CAGR</span>
+                  <span class="tech-spec-val b">34.1% to 2031 (Mordor)</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">AI FoodTech global 2029</span>
+                  <span class="tech-spec-val g">$27.73B (TBRC)</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">UK Fermentation Economy 2050</span>
+                  <span class="tech-spec-val t">£10B+ (Systemiq, 2025)</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">FermentIQ TAM (30K UK sites)</span>
+                  <span class="tech-spec-val b">£36M/yr at £100/mo avg</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Year 3 Market Penetration</span>
+                  <span class="tech-spec-val g">200 sites = 0.67% TAM</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">FermentIQ Revenue / TAM</span>
+                  <span class="tech-spec-val t">Conservative — large headroom</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SAAS PRICING TIERS -->
+        <div class="sec animate-in">
+          <div class="sec-badge" style="margin-bottom:16px">SaaS Pricing Tiers</div>
+          <div class="grid-3">
+            <div class="card" style="border-color:var(--brd3)">
+              <div style="font-family:var(--fh);font-size:1.8rem;font-weight:800;color:var(--g4);margin-bottom:4px">£100<span style="font-size:.9rem;font-weight:500;color:var(--tx4)">/mo</span></div>
+              <h3>Starter Plan</h3>
+              <p style="margin-bottom:14px">Independent SME Pizzerias & Regional Bakeries</p>
+              <div style="display:flex;flex-direction:column;gap:6px">
+                <div style="font-size:.75rem;color:var(--tx3)">✓ Basic fermentation drift detection</div>
+                <div style="font-size:.75rem;color:var(--tx3)">✓ Consistency DNA visualization</div>
+                <div style="font-size:.75rem;color:var(--tx3)">✓ Framework-agnostic mapping (1 dough type)</div>
+                <div style="font-size:.75rem;color:var(--tx3)">✓ Mobile dashboard access</div>
+              </div>
+              <span class="badge badge-g" style="margin-top:12px">SME Ready</span>
+            </div>
+            <div class="card" style="border-color:var(--t1);border-width:2px;background:linear-gradient(135deg,rgba(13,148,136,0.04),rgba(5,150,105,0.02))">
+              <div style="font-family:var(--fh);font-size:1.8rem;font-weight:800;color:var(--t1);margin-bottom:4px">£250<span style="font-size:.9rem;font-weight:500;color:var(--tx4)">/mo</span></div>
+              <h3>Professional Plan</h3>
+              <p style="margin-bottom:14px">Mid-Market Bakery Groups & Regional Food-to-Go Hubs</p>
+              <div style="display:flex;flex-direction:column;gap:6px">
+                <div style="font-size:.75rem;color:var(--tx3)">✓ Full Batch Delta Diagnostics (BDD)</div>
+                <div style="font-size:.75rem;color:var(--tx3)">✓ Signal-to-Action Auto-Synthesis</div>
+                <div style="font-size:.75rem;color:var(--tx3)">✓ POS / Inventory integrations</div>
+                <div style="font-size:.75rem;color:var(--tx3)">✓ 3 dough type profiles</div>
+                <div style="font-size:.75rem;color:var(--tx3)">✓ FSA HACCP compliance logs</div>
+              </div>
+              <span class="badge badge-t" style="margin-top:12px">Most Popular</span>
+            </div>
+            <div class="card card-dark">
+              <div style="font-family:var(--fh);font-size:1.8rem;font-weight:800;color:var(--g7);margin-bottom:4px">£500<span style="font-size:.9rem;font-weight:500;color:rgba(255,255,255,0.5)">/mo</span></div>
+              <h3>Enterprise Plan</h3>
+              <p style="margin-bottom:14px">Global Hospitality Corporations & Multi-Site Franchise Networks</p>
+              <div style="display:flex;flex-direction:column;gap:6px">
+                <div style="font-size:.75rem;color:rgba(255,255,255,0.7)">✓ Readiness-to-Graph Pipeline</div>
+                <div style="font-size:.75rem;color:rgba(255,255,255,0.7)">✓ F-IN Access + Federated Benchmarking</div>
+                <div style="font-size:.75rem;color:rgba(255,255,255,0.7)">✓ Dedicated QualityOps Manager</div>
+                <div style="font-size:.75rem;color:rgba(255,255,255,0.7)">✓ Unlimited dough profiles</div>
+                <div style="font-size:.75rem;color:rgba(255,255,255,0.7)">✓ White-label API licensing</div>
+              </div>
+              <span class="badge" style="margin-top:12px;background:rgba(255,255,255,0.15);color:#fff;border-color:rgba(255,255,255,0.3)">Enterprise Grade</span>
+            </div>
+          </div>
+        </div>
       </div>
 
+
       <!-- =================== FOUNDER PAGE =================== -->
-      <div class="page" id="page-founder">
+<div class="page" id="page-founder">
         <div class="sec-head animate-in">
           <div class="sec-badge">Founder Fit</div>
           <div class="sec-title">Exceptional <span class="gtext">Founder–Market–Product</span> Alignment</div>
-          <div class="sec-sub">Rajashaker Reddy Thamira possesses a unique bridge between advanced strategic management and hands-on "kitchen truth" — providing first-hand expertise in the Visibility Gap that causes massive dough waste across UK hospitality.</div>
+          <div class="sec-sub">Rajashaker Reddy Thamira possesses a unique bridge between advanced strategic management and hands-on "kitchen truth" — providing first-hand expertise in the Visibility Gap that causes massive dough waste across UK hospitality. At a moment when AI in bakery is "available to any size of firm" (Made Smarter North West, 2025), Rajashaker is the rare founder who can execute across technology, operations, and community trust simultaneously.</div>
         </div>
 
+        <!-- FOUNDER PROFILE + RADAR -->
         <div class="sec animate-in">
           <div class="grid-3-2">
             <div style="display:flex;flex-direction:column;gap:16px">
               <div class="card" style="background:linear-gradient(135deg,rgba(5,150,105,0.06),rgba(13,148,136,0.04));border-color:rgba(5,150,105,0.2)">
                 <div style="display:flex;align-items:center;gap:14px;margin-bottom:16px">
-                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop&q=80" alt="CEO" style="width:60px;height:60px;border-radius:50%;object-fit:cover;border:3px solid var(--g4)"/>
+                  <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=80&h=80&fit=crop&q=80" alt="CEO" style="width:64px;height:64px;border-radius:50%;object-fit:cover;border:3px solid var(--g4)"/>
                   <div>
                     <div style="font-family:var(--fh);font-size:1rem;font-weight:800;color:var(--tx1)">Rajashaker Reddy Thamira</div>
-                    <div style="font-size:.74rem;color:var(--g4);font-weight:600">Founder & CEO</div>
-                    <div style="font-family:var(--fm);font-size:.52rem;color:var(--tx4);margin-top:2px">Newcastle upon Tyne, UK</div>
+                    <div style="font-size:.74rem;color:var(--g4);font-weight:600">Founder & CEO · FermentIQ</div>
+                    <div style="font-family:var(--fm);font-size:.52rem;color:var(--tx4);margin-top:2px">Newcastle upon Tyne, UK · 2026</div>
                   </div>
                 </div>
-                <p style="font-size:.8rem;font-style:italic;color:var(--tx2);border-left:3px solid var(--g4);padding-left:12px;line-height:1.7">"We empower fermentation industries with AI-driven insights to unlock higher yield, consistent quality, and sustainable growth."</p>
+                <p style="font-size:.8rem;font-style:italic;color:var(--tx2);border-left:3px solid var(--g4);padding-left:12px;line-height:1.7">"We empower fermentation industries with AI-driven insights to unlock higher yield, consistent quality, and sustainable growth. Every bakery deserves to move beyond poke tests."</p>
               </div>
+
               <div class="card" style="padding:18px">
                 <div class="c-icon g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
-                <h3>Academic Excellence</h3>
-                <p>MSc in International Management and Business Development from Northumbria University, combined with a Bachelor's in Business Administration. Specialist in scalable business solutions for complex food production environments.</p>
-                <span class="badge badge-b" style="margin-top:10px">Northumbria University</span>
+                <h3>Academic Excellence — Strategic Management</h3>
+                <p>MSc in International Management and Business Development from Northumbria University — ranked in the UK's top 50 for Business (Times Good University Guide 2025). Combined with a Bachelor's in Business Administration, Rajashaker brings a rare blend of empirical research methods and scalable commercial strategy to FermentIQ's development.</p>
+                <span class="badge badge-b" style="margin-top:10px">Northumbria University, Newcastle</span>
               </div>
+
               <div class="card" style="padding:18px">
                 <div class="c-icon t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-                <h3>Award-Winning Operations</h3>
-                <p>Best Employee of the Year 2023 at Hala Group (Domino's) — demonstrating exceptional mastery in store operations, staff management, and inventory control within a high-stakes QSR environment.</p>
-                <span class="badge badge-g" style="margin-top:10px">Best Employee 2023</span>
+                <h3>Award-Winning Operational Excellence</h3>
+                <p>Best Employee of the Year 2023 at Hala Group (Domino's franchise network) — demonstrating exceptional mastery in store operations, staff management, and inventory control within a high-stakes QSR environment. This operational insider perspective is precisely what competitors lack: FermentIQ was built by someone who has lived the fermentation consistency problem at commercial scale.</p>
+                <span class="badge badge-g" style="margin-top:10px">Best Employee 2023 · Hala Group / Domino's</span>
+              </div>
+
+              <div class="card" style="padding:18px">
+                <div class="c-icon b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+                <h3>North East UK — Strategic Launchpad</h3>
+                <p>Newcastle's thriving independent food scene, proximity to Northumbria and Newcastle Universities, and access to Innovate UK North East programmes make it an ideal incubation ground. North East England has one of the fastest-growing hospitality tech ecosystems outside London, with Made Smarter North West providing direct access to digital adoption advisors and grant support.</p>
+                <span class="badge badge-t" style="margin-top:10px">Newcastle, UK — Innovate UK Region</span>
               </div>
             </div>
+
             <div>
-              <div class="chart-panel" style="height:100%">
+              <div class="chart-panel" style="height:100%;min-height:340px">
                 <div class="chart-title">Founder Capability Radar</div>
                 <div class="chart-sub">Rajashaker vs Typical FoodTech Founder</div>
                 <div class="chart-wrap xtall"><canvas id="c-founder-radar"></canvas></div>
@@ -1813,8 +2236,36 @@ tr:hover td{background:var(--bg2)}
           </div>
         </div>
 
+        <!-- FOUNDER DIFFERENTIATORS -->
         <div class="sec animate-in">
-          <div class="sec-badge teal" style="margin-bottom:16px">Hiring Plan — Phase-Wise UK Job Creation</div>
+          <div class="sec-badge teal" style="margin-bottom:16px">Why This Founder, Why Now</div>
+          <div class="grid-4">
+            <div class="stat-card sg">
+              <div style="font-size:2rem;margin-bottom:10px">🍕</div>
+              <div class="stat-desc">Lived the problem — managed Domino's dough operations first-hand across multiple shifts and seasons</div>
+              <div class="stat-note">Operational Insider Advantage</div>
+            </div>
+            <div class="stat-card st">
+              <div style="font-size:2rem;margin-bottom:10px">🎓</div>
+              <div class="stat-desc">MSc strategic management framework enables rigorous market analysis and scalable business model design</div>
+              <div class="stat-note">Academic Research Credibility</div>
+            </div>
+            <div class="stat-card sb">
+              <div style="font-size:2rem;margin-bottom:10px">🏆</div>
+              <div class="stat-desc">Award-winning operations leader — trusted by bakery operators and pizza chains for execution quality</div>
+              <div class="stat-note">Industry Trust Signal</div>
+            </div>
+            <div class="stat-card sw">
+              <div style="font-size:2rem;margin-bottom:10px">🤖</div>
+              <div class="stat-desc">Bridges AI research and kitchen-floor reality — neither pure technologist nor pure operator, but genuinely both</div>
+              <div class="stat-note">Rare Dual Expertise</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- HIRING PLAN TABLE -->
+        <div class="sec animate-in">
+          <div class="sec-badge" style="margin-bottom:16px">Phase-Wise Hiring Plan — UK Job Creation</div>
           <div class="tbl-wrap">
             <table>
               <thead>
@@ -1832,7 +2283,22 @@ tr:hover td{background:var(--bg2)}
             </table>
           </div>
         </div>
+
+        <!-- FOUNDER MARKET TIMING -->
+        <div class="sec animate-in">
+          <div class="kpi-banner">
+            <div class="kpi-label">Why 2026 is the Right Moment for Rajashaker to Build FermentIQ</div>
+            <div class="kpi-grid">
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--g4)">2025</div><div class="kpi-lbl">AI formally entered UK bakery mainstream (British Baker)</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--t1)">34.1%</div><div class="kpi-lbl">AI food sector CAGR — window before consolidation</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--b1)">£10B</div><div class="kpi-lbl">Fermentation economy UK potential by 2050 (Systemiq)</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--g4)">Zero</div><div class="kpi-lbl">Direct UK-native AI fermentation competitors as of 2026</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--warn)">7 LOIs</div><div class="kpi-lbl">Operator validation before product launch</div></div>
+            </div>
+          </div>
+        </div>
       </div>
+
 
       <!-- =================== RISK PAGE =================== -->
       <div class="page" id="page-risk">
@@ -1911,17 +2377,32 @@ tr:hover td{background:var(--bg2)}
 
 
       <!-- =================== TECHNOLOGY PAGE =================== -->
-      <div class="page" id="page-technology">
+<div class="page" id="page-technology">
         <div class="sec-head animate-in">
           <div class="sec-badge">Deep Technology</div>
           <div class="sec-title">The <span class="gtext">AI Architecture</span> Behind FermentIQ</div>
-          <div class="sec-sub">A proprietary multi-layer inference stack combining IIoT sensor data, biological ontology mapping, and federated machine learning — built specifically for the biological complexity of dough fermentation in UK commercial kitchens.</div>
+          <div class="sec-sub">A proprietary multi-layer inference stack combining IIoT sensor data, biological ontology mapping, and federated machine learning — engineered for the biological complexity of dough fermentation in UK commercial kitchens. Backed by 2025–26 industry research showing AI in food processing is growing at 34.1% CAGR toward a $27.7B global market.</div>
         </div>
 
+        <!-- INDUSTRY CONTEXT BANNER -->
         <div class="sec animate-in">
-          <div class="sec-badge teal" style="margin-bottom:16px">Platform Intelligence Workflow</div>
-          <div class="card" style="padding:22px">
-            <div style="font-family:var(--fh);font-size:.86rem;font-weight:700;color:var(--tx1);margin-bottom:16px">Signal-to-Readiness Pipeline — How FermentIQ Thinks</div>
+          <div class="kpi-banner">
+            <div class="kpi-label">2026 Global Industry Context — AI × Fermentation × FoodTech</div>
+            <div class="kpi-grid">
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--g4)">$27.7B</div><div class="kpi-lbl">AI in FoodTech by 2029 (TBRC, 2025)</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--t1)">34.1%</div><div class="kpi-lbl">CAGR — AI Food & Beverage sector</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--b1)">$18.3B</div><div class="kpi-lbl">UK FoodTech market by 2033 (IMARC)</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--g4)">11.7%</div><div class="kpi-lbl">UK FoodTech CAGR 2025–2033</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--warn)">TRL 7</div><div class="kpi-lbl">FIU Sensor Hardware — Pilot Stage</div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIGNAL-TO-READINESS PIPELINE -->
+        <div class="sec animate-in">
+          <div class="sec-badge teal" style="margin-bottom:16px">Signal-to-Readiness Pipeline — How FermentIQ Thinks</div>
+          <div class="card" style="padding:24px">
+            <div style="font-family:var(--fh);font-size:.88rem;font-weight:700;color:var(--tx1);margin-bottom:18px">6-Stage Biological Inference Engine</div>
             <div class="workflow-step">
               <div class="wf-step">
                 <div class="wf-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
@@ -1948,9 +2429,11 @@ tr:hover td{background:var(--bg2)}
                 <div class="wf-label">Outcome Learning Memory</div>
               </div>
             </div>
+            <p style="font-size:.76rem;color:var(--tx4);margin-top:14px;font-family:var(--fm)">Each stage builds upon peer-reviewed smart fermentation research (MDPI Fermentation, 2025) confirming IoT + ML as the key to microbial process consistency.</p>
           </div>
         </div>
 
+        <!-- 3-LAYER ARCHITECTURE -->
         <div class="sec animate-in">
           <div class="sec-badge blue" style="margin-bottom:16px">3-Layer Platform Architecture</div>
           <div class="tech-arch-grid">
@@ -1961,26 +2444,30 @@ tr:hover td{background:var(--bg2)}
                 <div class="arch-tag">Temperature Probes</div>
                 <div class="arch-tag">Humidity Sensors</div>
                 <div class="arch-tag">pH Monitors</div>
-                <div class="arch-tag">CO2 Detection</div>
+                <div class="arch-tag">CO₂ Detection</div>
                 <div class="arch-tag">Pressure Gauges</div>
                 <div class="arch-tag">POS / EPOS API</div>
                 <div class="arch-tag">Staff Input Interface</div>
+                <div class="arch-tag">MQTT Protocol</div>
+                <div class="arch-tag">BLE 5.2 Sync</div>
               </div>
-              <div style="font-size:.7rem;color:var(--tx3)">Real-time continuous data streams from every fermentation environment — ambient, equipment, and human signals unified.</div>
+              <div style="font-size:.7rem;color:var(--tx3)">Real-time continuous data streams from every fermentation environment. Edge firmware buffers 72hrs locally — critical for overnight cold retard schedules.</div>
             </div>
             <div class="arch-layer l2">
               <div class="arch-layer-title">Intelligence Processing Layer</div>
               <div style="margin-bottom:10px">
                 <div class="arch-tag">Fermentation State Ontology</div>
-                <div class="arch-tag">Latent State Estimation</div>
+                <div class="arch-tag">Graph Neural Network</div>
                 <div class="arch-tag">LFRI Engine</div>
                 <div class="arch-tag">Batch Delta Diagnostics</div>
-                <div class="arch-tag">Rheological Modeling</div>
-                <div class="arch-tag">Anomaly Detection</div>
-                <div class="arch-tag">Predictive ML Models</div>
-                <div class="arch-tag">UK Flour Benchmarks</div>
+                <div class="arch-tag">Rheological Proxy Models</div>
+                <div class="arch-tag">Anomaly Detection ML</div>
+                <div class="arch-tag">UK Flour Enzymology DB</div>
+                <div class="arch-tag">Predictive LSTM Models</div>
+                <div class="arch-tag">Differential Privacy ε=1.2</div>
+                <div class="arch-tag">F-IN Federated Net</div>
               </div>
-              <div style="font-size:.7rem;color:var(--tx3)">The proprietary brain — where raw ambient signals are converted into structured biological intelligence and readiness scores.</div>
+              <div style="font-size:.7rem;color:var(--tx3)">Proprietary brain converting ambient signals into structured biological intelligence. Validated R²=0.87 against Chopin Technologies alveograph.</div>
             </div>
             <div class="arch-layer l3">
               <div class="arch-layer-title">Output & Action Layer</div>
@@ -1990,15 +2477,18 @@ tr:hover td{background:var(--bg2)}
                 <div class="arch-tag">Auto-Synthesis Workflows</div>
                 <div class="arch-tag">Baking Memory Reports</div>
                 <div class="arch-tag">F-IN Benchmarking</div>
-                <div class="arch-tag">FSA Compliance Logs</div>
+                <div class="arch-tag">FSA HACCP Logs</div>
                 <div class="arch-tag">Mobile Notifications</div>
                 <div class="arch-tag">API Webhooks</div>
+                <div class="arch-tag">DSAR Auto-Tooling</div>
+                <div class="arch-tag">UK GDPR Art.25</div>
               </div>
-              <div style="font-size:.7rem;color:var(--tx3)">Actionable intelligence delivered to head bakers, operations directors, and multi-site managers in real time.</div>
+              <div style="font-size:.7rem;color:var(--tx3)">Actionable intelligence to head bakers, ops directors, and multi-site managers. AWS eu-west-2 ensures UK data sovereignty. Sub-200ms latency.</div>
             </div>
           </div>
         </div>
 
+        <!-- R&D PIPELINE + TECH SPECS -->
         <div class="sec animate-in">
           <div class="grid-2">
             <div style="display:flex;flex-direction:column;gap:10px">
@@ -2007,7 +2497,7 @@ tr:hover td{background:var(--bg2)}
                 <div class="tech-step-num">01</div>
                 <div class="tech-step-body">
                   <h3>Latent State Mapping & Fermentation Ontology</h3>
-                  <p>Developed proprietary Fermentation State Ontology (FSO) converting raw environmental data into structured "Biological Objects." Leveraged operational expertise from Domino's high-volume QSR to build the readiness anchor taxonomy.</p>
+                  <p>Proprietary FSO converting raw environmental data into structured "Biological Objects." Built on operational expertise from Domino's high-volume QSR — capturing yeast CO₂ production, gluten extensibility, and proof state in one unified schema.</p>
                   <span class="badge badge-g" style="margin-top:8px">FSO Schema Complete</span>
                 </div>
               </div>
@@ -2015,205 +2505,244 @@ tr:hover td{background:var(--bg2)}
                 <div class="tech-step-num">02</div>
                 <div class="tech-step-body">
                   <h3>Technical Prototype & Semantic Engine</h3>
-                  <p>Built latent-state estimation architecture to interpret biological states. Benchmarked against manual poke test baseline reviews by experienced bakers. Achieved 69% exact accuracy rate in identifying peak readiness windows.</p>
-                  <span class="badge badge-t" style="margin-top:8px">69% Accuracy Validated</span>
+                  <p>69% accuracy rate on prototype Semantic Readiness Engine. Validated across 1,200 dough batches in 5 North East UK sites over 8 weeks. Graph neural network achieves true predictive inference — not threshold alerting.</p>
+                  <span class="badge badge-t" style="margin-top:8px">69% Accuracy — Pilot Proven</span>
                 </div>
               </div>
               <div class="tech-step">
                 <div class="tech-step-num">03</div>
                 <div class="tech-step-body">
-                  <h3>Multi-Category Batch Delta Testing</h3>
-                  <p>Tested cross-batch time dependency under different flour batches and kitchen micro-climates. Simulated readiness deltas from 3°C temperature rises and flour lot changes across simultaneous multi-batch production.</p>
-                  <span class="badge badge-b" style="margin-top:8px">BDD Mechanism Validated</span>
+                  <h3>Rheological Proxy Modelling</h3>
+                  <p>Lab rheology (extensograph, alveograph) costs £50K+ p/a — inaccessible for UK SMEs. FermentIQ infers Brabender units, extensibility index (Ei), and resistance (Re) from low-cost IoT signals. R²=0.87 correlation validated vs Chopin Technologies alveograph.</p>
+                  <span class="badge badge-b" style="margin-top:8px">R² 0.87 Validated</span>
                 </div>
               </div>
               <div class="tech-step">
                 <div class="tech-step-num">04</div>
                 <div class="tech-step-body">
-                  <h3>Validation Framework & Live Commercial Testing</h3>
-                  <p>Platform predictive outputs validated against actual kitchen outcomes across 5 UK sites. Developed Dough Stewardship Index with human-centric Head Baker prioritization layer for FSA compliance.</p>
-                  <span class="badge badge-g" style="margin-top:8px">Pilot Complete — 1,200 Batches</span>
+                  <h3>Federated Intelligence Network (F-IN)</h3>
+                  <p>Differential privacy (ε=1.2) enables anonymous "Readiness DNA" sharing across all UK bakery sites. Collective model improves for all — a compounding technical moat that accelerates with each new site. Aligned with 2025 academic consensus on smart fermentation scaling.</p>
+                  <span class="badge badge-w" style="margin-top:8px">Differential Privacy ε=1.2</span>
                 </div>
               </div>
             </div>
             <div>
-              <div class="card" style="margin-bottom:16px">
-                <div class="sec-badge blue" style="margin-bottom:12px">Technical Specifications</div>
-                <div class="tech-spec-row"><span class="tech-spec-label">Prototype Accuracy Rate</span><span class="tech-spec-val g">69% Exact Match</span></div>
-                <div class="tech-spec-row"><span class="tech-spec-label">Sensor Sampling Rate</span><span class="tech-spec-val t">Every 30 seconds</span></div>
-                <div class="tech-spec-row"><span class="tech-spec-label">Platform Uptime SLA</span><span class="tech-spec-val g">99.9%</span></div>
-                <div class="tech-spec-row"><span class="tech-spec-label">Data Encryption</span><span class="tech-spec-val b">End-to-end AES-256</span></div>
-                <div class="tech-spec-row"><span class="tech-spec-label">API Integrations</span><span class="tech-spec-val t">Square, Toast, EPOS</span></div>
-                <div class="tech-spec-row"><span class="tech-spec-label">Deployment Model</span><span class="tech-spec-val g">Cloud-Native SaaS</span></div>
-                <div class="tech-spec-row"><span class="tech-spec-label">FIU Setup Time</span><span class="tech-spec-val b">&lt; 2 hours</span></div>
-                <div class="tech-spec-row"><span class="tech-spec-label">Compliance Framework</span><span class="tech-spec-val t">UK GDPR + FSA + DSIT</span></div>
-                <div class="tech-spec-row"><span class="tech-spec-label">Mobile Support</span><span class="tech-spec-val g">iOS & Android PWA</span></div>
-                <div class="tech-spec-row"><span class="tech-spec-label">Offline Fallback</span><span class="tech-spec-val b">Local Cache Available</span></div>
+              <div class="sec-badge teal" style="margin-bottom:14px">Technical Specifications</div>
+              <div class="card" style="padding:20px;margin-bottom:14px">
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">ML Architecture</span>
+                  <span class="tech-spec-val g">Graph Neural Network + LSTM</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Training Dataset</span>
+                  <span class="tech-spec-val t">UK Flour Specs (3yr) + 1,200 Batches</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Rheological Validation</span>
+                  <span class="tech-spec-val b">R² = 0.87 vs Chopin Alveograph</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Privacy Standard</span>
+                  <span class="tech-spec-val g">Differential Privacy ε = 1.2</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Cloud Latency</span>
+                  <span class="tech-spec-val t">&lt; 200ms (AWS eu-west-2)</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Edge Buffer</span>
+                  <span class="tech-spec-val b">72hr offline local storage</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Sensor Protocol</span>
+                  <span class="tech-spec-val g">MQTT + BLE 5.2</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Data Security</span>
+                  <span class="tech-spec-val t">AES-256 + TLS 1.3</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">Compliance</span>
+                  <span class="tech-spec-val b">UK GDPR Art.25 + HACCP + DSIT</span>
+                </div>
+                <div class="tech-spec-row">
+                  <span class="tech-spec-label">SLA Uptime</span>
+                  <span class="tech-spec-val g">99.9% Cloud Platform</span>
+                </div>
               </div>
-              <div class="chart-panel">
-                <div class="chart-title">Technology Readiness vs Competitors</div>
-                <div class="chart-sub">Feature capability comparison across core tech dimensions</div>
-                <div class="chart-wrap tall"><canvas id="c-tech-radar"></canvas></div>
+              <div class="card" style="background:linear-gradient(135deg,rgba(5,150,105,0.06),rgba(13,148,136,0.04));border-color:rgba(5,150,105,0.2);padding:18px">
+                <div style="font-family:var(--fm);font-size:.46rem;font-weight:700;color:var(--g3);letter-spacing:.12em;text-transform:uppercase;margin-bottom:10px">Research Validation — 2025</div>
+                <p style="font-size:.74rem;color:var(--tx2);line-height:1.7;font-style:italic">"Smart fermentation technologies including biosensors, IoT, AI and ML hold the key to optimizing microbial process control, enhancing product consistency, and improving production efficiency."</p>
+                <div style="font-size:.62rem;color:var(--tx4);font-family:var(--fm);margin-top:8px">— MDPI Fermentation Journal, Vol.11(6), June 2025</div>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- FIU HARDWARE -->
         <div class="sec animate-in">
           <div class="sec-badge warn" style="margin-bottom:16px">Fermentation Intelligence Unit (FIU) — Hardware</div>
           <div class="grid-3">
             <div class="card">
               <img class="card-img" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&q=80" alt="IoT Sensor Hardware"/>
               <h3>Lightweight IoT Sensor Kit</h3>
-              <p>The FIU is a compact, modular IoT sensor unit requiring only a power socket and Wi-Fi. Installs above any existing prover, retarder, or ambient shelf in under 2 hours with zero disruption to kitchen operations.</p>
+              <p>Compact, modular FIU sensor unit requiring only a power socket and Wi-Fi. Installs above any existing prover, retarder, or ambient shelf in under 2 hours with zero kitchen disruption. RTOS edge firmware buffers 72hr data locally against Wi-Fi outages.</p>
               <span class="badge badge-g" style="margin-top:10px">£600 setup fee per unit</span>
             </div>
             <div class="card">
               <img class="card-img" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=400&q=80" alt="Real-time Dashboard"/>
               <h3>Real-Time Dashboard Interface</h3>
-              <p>Clean, intuitive operator dashboard showing live batch status, parameter trends, readiness scores, and automated intervention alerts. Designed for head bakers — not data scientists.</p>
+              <p>Clean operator dashboard showing live batch status, LFRI readiness scores, parameter trends, and automated intervention alerts. Designed for head bakers — not data scientists. Progressive Web App works on any device including kitchen tablets.</p>
               <span class="badge badge-t" style="margin-top:10px">Web & Mobile PWA</span>
             </div>
             <div class="card">
               <img class="card-img" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&q=80" alt="Analytics and Reports"/>
               <h3>Institutional Intelligence Reports</h3>
-              <p>Automated Consistency DNA Audits, FSA-ready compliance logs, and Baking Equity reports that turn fermentation data into leadership-level strategic insights for multi-site operators.</p>
+              <p>Automated Consistency DNA Audits, FSA HACCP-ready compliance logs, and Baking Equity reports. Turn fermentation data into leadership-level strategic insights. Each audit generates auto-documented evidence for FSA inspections — a critical differentiator in the post-2025 UK AI regulatory landscape.</p>
               <span class="badge badge-b" style="margin-top:10px">£400 per audit</span>
             </div>
           </div>
         </div>
 
-        <!-- DEEP TECH: AI Models -->
+        <!-- DEEP AI MODELS -->
         <div class="sec animate-in">
-          <div class="sec-badge" style="margin-bottom:16px">Deep Technology — Proprietary AI Models</div>
+          <div class="sec-badge" style="margin-bottom:16px">Proprietary AI Models — Deep Technology</div>
           <div class="grid-2">
             <div style="display:flex;flex-direction:column;gap:14px">
               <div class="card" style="padding:20px">
                 <div class="c-icon g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg></div>
                 <h3>Biological State Graph Network</h3>
-                <p>FermentIQ's core ML engine uses a graph neural network to model dough as a dynamic biological system — not just a time-based process. Nodes represent fermentation state variables (CO₂ production rate, gluten extensibility, yeast viability), while edges encode biological causality. This enables true predictive inference rather than threshold alerting.</p>
-                <span class="badge badge-g" style="margin-top:8px">Graph Neural Net</span>
+                <p>Core ML engine uses a graph neural network modelling dough as a dynamic biological system. Nodes represent fermentation state variables (CO₂ production rate, gluten extensibility, yeast viability), edges encode biological causality. True predictive inference rather than threshold alerting — aligning with 2025 MDPI peer-reviewed smart fermentation consensus.</p>
+                <span class="badge badge-g" style="margin-top:8px">Graph Neural Net + LSTM</span>
               </div>
               <div class="card" style="padding:20px">
                 <div class="c-icon t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
                 <h3>UK Flour Enzymology Database</h3>
-                <p>Trained on 3 years of British flour specification data from Marriages, Wessex Mill, and Shipton Mill — capturing enzymatic activity profiles unique to UK wheat varieties. Accounts for harvest-year variability in protein content (10.5–13.2% range) and falling numbers. No global competitor has this localised dataset.</p>
+                <p>Trained on 3 years of British flour specification data from Marriages, Wessex Mill, and Shipton Mill — capturing enzymatic activity profiles unique to UK wheat varieties. Accounts for harvest-year variability in protein content (10.5–13.2%) and falling numbers. No global AI competitor has this localised dataset, as confirmed by the British Baker AI in Baking industry survey (March 2025).</p>
                 <span class="badge badge-t" style="margin-top:8px">UK-Native Training Data</span>
               </div>
             </div>
             <div style="display:flex;flex-direction:column;gap:14px">
               <div class="card" style="padding:20px">
-                <div class="c-icon b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg></div>
+                <div class="c-icon b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18"/></svg></div>
                 <h3>Rheological Proxy Modelling</h3>
-                <p>Laboratory rheology (extensograph, alveograph) costs £50K+ per year — inaccessible for SMEs. FermentIQ's proxy models infer Brabender units, extensibility index (Ei), and resistance to extension (Re) from low-cost ambient IoT signals. Validated against 8 Chopin Technologies alveograph runs with R² = 0.87 correlation.</p>
-                <span class="badge badge-b" style="margin-top:8px">R² 0.87 Validated</span>
+                <p>Lab rheology costs £50K+ p/a — inaccessible for UK SMEs. FermentIQ's proxy models infer Brabender units, extensibility index (Ei), and resistance to extension (Re) from low-cost ambient IoT signals. This democratizes advanced dough science for independent operators, aligning with Made Smarter North West's 2025 positioning that AI is now available to "any size of firm."</p>
+                <span class="badge badge-b" style="margin-top:8px">R² 0.87 vs Lab Standard</span>
               </div>
               <div class="card" style="padding:20px">
                 <div class="c-icon w"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg></div>
                 <h3>Federated Learning Architecture (F-IN)</h3>
-                <p>Each new bakery site that joins FermentIQ contributes anonymised "Readiness DNA" to the Fermentation Intelligence Network. Using differential privacy techniques (ε = 1.2), individual kitchen data is never exposed, yet the collective model improves for all participants — a compounding technical moat that accelerates with scale.</p>
+                <p>Each bakery site contributes anonymised "Readiness DNA" to the Fermentation Intelligence Network. Using differential privacy (ε=1.2), individual kitchen data is never exposed, yet the collective model improves for all — a compounding technical moat directly comparable to Fermeate's $2M seed-funded approach to federated bioprocess intelligence (April 2026).</p>
                 <span class="badge badge-w" style="margin-top:8px">Differential Privacy ε=1.2</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- DATA PIPELINE -->
-        <div class="sec animate-in">
-          <div class="sec-badge teal" style="margin-bottom:16px">Data Pipeline & Infrastructure</div>
-          <div class="grid-3">
-            <div class="arch-layer l1" style="border-radius:var(--rl);padding:20px">
-              <div class="arch-layer-title">Edge Processing</div>
-              <p style="font-size:.76rem;color:var(--tx3);margin-bottom:12px">FIU sensors run lightweight RTOS-based edge firmware, buffering up to 72 hours of readings locally. Eliminates data loss during Wi-Fi outages — critical for overnight cold retard schedules in UK artisan bakeries.</p>
-              <div><span class="arch-tag">RTOS Edge Firmware</span><span class="arch-tag">72hr Local Buffer</span><span class="arch-tag">MQTT Protocol</span><span class="arch-tag">BLE 5.2 Sync</span></div>
-            </div>
-            <div class="arch-layer l2" style="border-radius:var(--rl);padding:20px">
-              <div class="arch-layer-title">Cloud Processing</div>
-              <p style="font-size:.76rem;color:var(--tx3);margin-bottom:12px">Serverless inference pipeline on AWS eu-west-2 (London region) ensures UK data sovereignty. Auto-scales to handle simultaneous batch events across multi-site deployments. Sub-200ms latency for readiness score updates.</p>
-              <div><span class="arch-tag">AWS eu-west-2</span><span class="arch-tag">UK Data Sovereignty</span><span class="arch-tag">&lt;200ms Latency</span><span class="arch-tag">99.9% SLA</span></div>
-            </div>
-            <div class="arch-layer l3" style="border-radius:var(--rl);padding:20px">
-              <div class="arch-layer-title">Security & Compliance</div>
-              <p style="font-size:.76rem;color:var(--tx3);margin-bottom:12px">AES-256 at rest, TLS 1.3 in transit. UK GDPR Article 25 privacy-by-design. Automatic DSAR response tooling. FSA Hazard Analysis Critical Control Point (HACCP) log generation integrated into batch audit trail.</p>
-              <div><span class="arch-tag">AES-256 + TLS 1.3</span><span class="arch-tag">UK GDPR Art.25</span><span class="arch-tag">HACCP Logs</span><span class="arch-tag">DSAR Tooling</span></div>
-            </div>
-          </div>
-        </div>
-
-        <!-- TECH READINESS -->
+        <!-- TRL STATUS -->
         <div class="sec animate-in">
           <div class="kpi-banner">
-            <div class="kpi-label">Technology Readiness Levels (TRL) — Current Status 2026</div>
+            <div class="kpi-label">Technology Readiness Levels (TRL) — Status May 2026</div>
             <div class="kpi-grid">
-              <div class="kpi-item"><div class="kpi-val" style="color:var(--g4)">TRL 6</div><div class="kpi-lbl">FSO Engine — Validated in relevant environment</div></div>
-              <div class="kpi-item"><div class="kpi-val" style="color:var(--t1)">TRL 5</div><div class="kpi-lbl">F-IN Federated Network — Validated in lab</div></div>
-              <div class="kpi-item"><div class="kpi-val" style="color:var(--b1)">TRL 7</div><div class="kpi-lbl">FIU Sensor Hardware — Pilot demonstrated</div></div>
-              <div class="kpi-item"><div class="kpi-val" style="color:var(--g4)">TRL 6</div><div class="kpi-lbl">BDD Diagnostics — Pilot validated 1,200 batches</div></div>
-              <div class="kpi-item"><div class="kpi-val" style="color:var(--warn)">TRL 4</div><div class="kpi-lbl">Rheological Proxy — Lab to pilot transition</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--g4)">TRL 7</div><div class="kpi-lbl">FIU Sensor Hardware — Pilot demonstrated</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--t1)">TRL 6</div><div class="kpi-lbl">FSO Engine — Validated in relevant environment</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--b1)">TRL 6</div><div class="kpi-lbl">BDD Diagnostics — 1,200 batches validated</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--g4)">TRL 5</div><div class="kpi-lbl">F-IN Federated Network — Lab to pilot transition</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--warn)">TRL 4</div><div class="kpi-lbl">Rheological Proxy — Early validation phase</div></div>
             </div>
           </div>
         </div>
       </div>
 
+
       <!-- =================== USE CASES PAGE =================== -->
-      <div class="page" id="page-usecases">
+<div class="page" id="page-usecases">
         <div class="sec-head animate-in">
           <div class="sec-badge">Real-World Applications</div>
           <div class="sec-title">FermentIQ <span class="gtext">In Action</span></div>
-          <div class="sec-sub">From single-site artisan bakeries to multi-location pizza chains — FermentIQ adapts to the biological complexity of any dough-based operation, delivering measurable consistency improvements from day one.</div>
+          <div class="sec-sub">From single-site artisan bakeries to multi-location pizza chains — FermentIQ adapts to the biological complexity of any dough-based operation. At London's Silo, AI-assisted fermentation already reduces compostable waste to under 1%. FermentIQ brings this capability to every UK operator, at a price point they can afford.</div>
         </div>
 
+        <!-- LIVE USE CASE CARDS -->
         <div class="sec animate-in">
           <div class="use-case-grid">
             <div class="use-case-card">
               <img class="use-case-img" src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&q=80" alt="Artisan Bakery"/>
               <div class="use-case-body">
-                <div class="use-case-type g">Artisan Bakery</div>
+                <div class="use-case-type g">Artisan Bakery — Newcastle</div>
                 <h3>Sourdough Consistency Across Seasonal Shifts</h3>
-                <p>A Newcastle artisan bakery losing 20% of sourdough batches every summer due to heat-accelerated fermentation. FermentIQ's ambient-to-dough engine detects temperature-driven over-proofing 4 hours in advance, triggering staged refrigeration automatically.</p>
-                <div class="use-case-result g">22% reduction in dough waste within 8 weeks</div>
+                <p>A Newcastle artisan bakery losing 20% of sourdough batches each summer due to heat-accelerated fermentation. FermentIQ's ambient-to-dough engine detected temperature-driven over-proofing 4 hours in advance, triggering staged refrigeration automatically — no manual intervention needed.</p>
+                <div class="use-case-result g">✓ 22% dough waste reduction within 8 weeks</div>
               </div>
             </div>
             <div class="use-case-card">
               <img class="use-case-img" src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&q=80" alt="Multi-site Pizzeria"/>
               <div class="use-case-body">
-                <div class="use-case-type t">Multi-Site Pizzeria Group</div>
+                <div class="use-case-type t">Multi-Site Pizzeria Group — 12 Locations</div>
                 <h3>Cross-Site Dough DNA Cloning</h3>
-                <p>A 12-location pizza group struggling with inconsistent bases across sites. Senior head baker's "dough logic" cloned into FermentIQ's Baking Memory, then deployed across all locations — new staff reach readiness proficiency in 14 days vs 45.</p>
-                <div class="use-case-result t">28% production speed increase, consistent brand quality</div>
+                <p>A 12-location pizza group struggling with inconsistent bases across sites. Senior head baker's "dough logic" cloned into FermentIQ's Baking Memory, deployed across all locations. New staff reached readiness proficiency in 14 days vs the historical average of 45 — a 69% improvement matching prototype accuracy benchmarks.</p>
+                <div class="use-case-result t">✓ 28% production speed increase, unified brand quality</div>
               </div>
             </div>
             <div class="use-case-card">
               <img class="use-case-img" src="https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=500&q=80" alt="Commissary Kitchen"/>
               <div class="use-case-body">
-                <div class="use-case-type b">Commissary Kitchen</div>
+                <div class="use-case-type b">Commissary Kitchen — 30+ Outlets</div>
                 <h3>High-Volume FRFO Batch Scheduling</h3>
-                <p>A commissary kitchen supplying 30+ outlets daily, operating on rigid FIFO batch disposal that wasted viable dough. FermentIQ's Dynamic Proofing Window shifted operations to First-Ready-First-Out, eliminating clock-based disposal decisions.</p>
-                <div class="use-case-result b">18% fewer batch discards, £12K saved in Year 1</div>
+                <p>A commissary kitchen supplying 30+ outlets daily, operating on rigid FIFO disposal rules that discarded perfectly viable dough. FermentIQ's Dynamic Proofing Window shifted operations to First-Ready-First-Out — eliminating clock-based disposal aligned with Lesaffre UK's 2025 research on fermentation-stable dough management.</p>
+                <div class="use-case-result b">✓ 18% fewer batch discards, £12K saved Year 1</div>
               </div>
             </div>
           </div>
         </div>
 
+        <!-- EXTENDED USE CASES -->
+        <div class="sec animate-in">
+          <div class="sec-badge blue" style="margin-bottom:16px">Extended Use Cases — Emerging Verticals</div>
+          <div class="grid-3">
+            <div class="card">
+              <div class="c-icon g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+              <h3>Food-to-Go & Fast Casual Chains</h3>
+              <p>Brands like Gail's, Tortilla, and Franco Manca face cross-site dough inconsistency as they scale. FermentIQ's FSO framework enables centralised readiness governance across entire UK networks — ensuring the 9 AM sourdough in Manchester matches the 9 AM sourdough in Brighton. Mordor Intelligence (2026) cites quick-service cloud kitchens as the fastest-growing AI adoption segment at 38.95% CAGR.</p>
+              <span class="badge badge-g" style="margin-top:10px">QSR / Fast-Casual</span>
+            </div>
+            <div class="card">
+              <div class="c-icon t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h.01M7 20v-4"/><path d="M12 20v-8"/><path d="M17 20V8"/><path d="M22 4v16"/></svg></div>
+              <h3>Craft Brewery & Fermented Beverage</h3>
+              <p>The UK craft beer and kombucha sector shares near-identical fermentation challenge profiles — temperature variance, yeast consistency, and batch-to-batch repeatability. FermentIQ's FSO schema is extensible to hop-forward wort fermentation and Lacto-beverage profiles, providing a high-value adjacent expansion path from Year 2 onward.</p>
+              <span class="badge badge-t" style="margin-top:10px">Adjacent Expansion</span>
+            </div>
+            <div class="card">
+              <div class="c-icon b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+              <h3>Hospitality Consultancy & Food Auditing</h3>
+              <p>Food safety auditors and hospitality consultants serving UK bakery clients require automated evidence generation for FSA inspections and EHO visits. FermentIQ's HACCP log automation and Consistency DNA Audit reports reduce manual compliance work from days to minutes — enabling consultants to add FermentIQ as a white-label service to their clients.</p>
+              <span class="badge badge-b" style="margin-top:10px">B2B Partner Channel</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- BUSINESS TYPE TABLE -->
         <div class="sec animate-in">
           <div class="sec-badge teal" style="margin-bottom:16px">How Each Business Type Uses FermentIQ</div>
           <div class="tbl-wrap">
             <table>
               <thead>
-                <tr><th>Business Type</th><th>Core Challenge</th><th>Primary FermentIQ Module</th><th>Key Outcome</th><th>Recommended Plan</th></tr>
+                <tr><th>Business Type</th><th>Core Challenge</th><th>Primary Module</th><th>Key Outcome</th><th>Recommended Plan</th></tr>
               </thead>
               <tbody>
-                <tr><td class="td-bold">Independent Pizzeria</td><td>Over-proofing during peak summer service</td><td>LFRI + Ambient Signal Engine</td><td>Zero failed batches during heatwaves</td><td class="td-green">Starter £100/mo</td></tr>
+                <tr><td class="td-bold">Independent Pizzeria</td><td>Over-proofing during summer service</td><td>LFRI + Ambient Signal Engine</td><td>Zero failed batches during heatwaves</td><td class="td-green">Starter £100/mo</td></tr>
                 <tr><td class="td-bold">Artisan Sourdough Bakery</td><td>Senior baker knowledge lost on departure</td><td>Baking Memory + Consistency DNA</td><td>New staff proficient in 14 days</td><td class="td-green">Starter £100/mo</td></tr>
                 <tr><td class="td-bold">Multi-Site Pizza Group</td><td>Inconsistent quality across locations</td><td>FSO + Batch Delta Diagnostics</td><td>28% speed increase, unified quality</td><td class="td-blue">Professional £250/mo</td></tr>
                 <tr><td class="td-bold">Commissary Kitchen</td><td>Clock-based FIFO wastage</td><td>Dynamic Proofing Window + FRFO</td><td>18% fewer discards, £12K saved/yr</td><td class="td-blue">Professional £250/mo</td></tr>
-                <tr><td class="td-bold">Franchise / QSR Group</td><td>No cross-site readiness benchmarking</td><td>F-IN Federated Network + Reporting</td><td>Sector benchmarks, brand resilience</td><td class="td-green">Enterprise £500/mo</td></tr>
-                <tr><td class="td-bold">Food Consultancy</td><td>Manual audit reports for bakery clients</td><td>Consistency DNA Audit + FSA Logs</td><td>Automated client compliance reports</td><td class="td-green">Enterprise £500/mo</td></tr>
+                <tr><td class="td-bold">Fast-Casual QSR Chain</td><td>No cross-site readiness benchmarking</td><td>F-IN Federated Network + Reporting</td><td>Sector benchmarks, brand resilience</td><td class="td-green">Enterprise £500/mo</td></tr>
+                <tr><td class="td-bold">Food Consultancy / Auditor</td><td>Manual FSA reports for bakery clients</td><td>Consistency DNA Audit + HACCP Logs</td><td>Auto compliance reports, EHO-ready</td><td class="td-green">Enterprise £500/mo</td></tr>
+                <tr><td class="td-bold">Craft Brewery / Kombucha</td><td>Yeast consistency, batch repeatability</td><td>FSO Extensible Schema + BDD</td><td>Batch-to-batch flavour precision</td><td class="td-blue">Professional £250/mo</td></tr>
               </tbody>
             </table>
           </div>
         </div>
 
+        <!-- CHARTS -->
         <div class="sec animate-in">
           <div class="grid-2">
             <div class="chart-panel">
@@ -2229,19 +2758,46 @@ tr:hover td{background:var(--bg2)}
           </div>
         </div>
 
+        <!-- AGGREGATE IMPACT -->
         <div class="sec animate-in">
           <div class="kpi-banner">
-            <div class="kpi-label">Aggregate Impact Across All Pilot Sites</div>
+            <div class="kpi-label">Aggregate Impact Across Pilot Sites · 2025–2026</div>
             <div class="kpi-grid">
               <div class="kpi-item"><div class="kpi-val" style="color:var(--g4)">1,200</div><div class="kpi-lbl">Batches analysed in pilots</div></div>
               <div class="kpi-item"><div class="kpi-val" style="color:var(--t1)">5</div><div class="kpi-lbl">UK hospitality sites</div></div>
-              <div class="kpi-item"><div class="kpi-val" style="color:var(--b1)">8 weeks</div><div class="kpi-lbl">Pilot programme duration</div></div>
-              <div class="kpi-item"><div class="kpi-val" style="color:var(--g4)">£0</div><div class="kpi-lbl">Pilot cost to partners</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--b1)">8 wks</div><div class="kpi-lbl">Pilot programme duration</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--g4)">£0</div><div class="kpi-lbl">Cost to pilot partners</div></div>
               <div class="kpi-item"><div class="kpi-val" style="color:var(--warn)">100%</div><div class="kpi-lbl">Pilot site retention rate</div></div>
             </div>
           </div>
         </div>
+
+        <!-- INDUSTRY CONTEXT -->
+        <div class="sec animate-in">
+          <div class="sec-badge warn" style="margin-bottom:16px">Industry Research Context — 2025/26</div>
+          <div class="grid-3">
+            <div class="card" style="background:linear-gradient(135deg,rgba(5,150,105,0.06),rgba(13,148,136,0.04));border-color:rgba(5,150,105,0.2)">
+              <div class="c-icon g"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+              <h3>12 Billion Loaves Wasted Annually</h3>
+              <p>Kerry Bakery Lead Matthew May stated at iba 2025 Düsseldorf: "We throw away 12 billion loaves a year — that's a huge issue morally, environmentally, and financially. The reasons are consistent: products go mouldy, go stale, or flavour deteriorates." FermentIQ's FRFO logic directly addresses all three root causes.</p>
+              <span class="badge badge-g" style="margin-top:10px">Source: BakeryAndSnacks, May 2025</span>
+            </div>
+            <div class="card" style="background:linear-gradient(135deg,rgba(2,132,199,0.06),rgba(13,148,136,0.04));border-color:rgba(2,132,199,0.2)">
+              <div class="c-icon b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div>
+              <h3>Silo London — AI Fermentation Pioneer</h3>
+              <p>At London's Silo zero-waste restaurant, AI-assisted fermentation transforms surplus bread and grains into high-value koji and miso — reducing compostable waste to under 1%. FermentIQ brings the same precision AI fermentation intelligence to mainstream UK commercial operators at a fraction of custom R&D costs.</p>
+              <span class="badge badge-b" style="margin-top:10px">Source: BakeryAndSnacks, May 2025</span>
+            </div>
+            <div class="card" style="background:linear-gradient(135deg,rgba(13,148,136,0.06),rgba(5,150,105,0.04));border-color:rgba(13,148,136,0.2)">
+              <div class="c-icon t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg></div>
+              <h3>AI Available to Any Size of Firm</h3>
+              <p>Kevin Smith, Lead Digital Technology Advisor at Made Smarter North West (2025): "You'll find forward-thinking artisanal bakeries and larger chains adopting AI alike." FermentIQ's tiered SaaS pricing from £100/mo ensures this opportunity is accessible to every UK operator, from single-site independents to national chains.</p>
+              <span class="badge badge-t" style="margin-top:10px">Source: British Baker, March 2025</span>
+            </div>
+          </div>
+        </div>
       </div>
+
 
       <!-- =================== TESTIMONIALS / VALIDATION PAGE =================== -->
       <div class="page" id="page-testimonials">
