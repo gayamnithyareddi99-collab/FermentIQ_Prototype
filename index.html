@@ -617,6 +617,11 @@ tr:hover td{background:var(--bg2)}
   .loi-card{padding:14px!important}
   .loi-header{flex-wrap:wrap!important;gap:6px!important}
   .loi-detail{font-size:.74rem!important}
+  /* LFRI table — single column on mobile */
+  .lfri-table{grid-template-columns:1fr!important}
+  .lfri-row{flex-wrap:nowrap!important;gap:6px!important}
+  .lfri-name{font-size:.7rem!important}
+  .lfri-badge{font-size:.38rem!important}
 }
 
 /* ============================ RESPONSIVE — 600px SMALL MOBILE ============================ */
@@ -725,6 +730,14 @@ tr:hover td{background:var(--bg2)}
 .loi-biz{font-family:var(--fh);font-size:.82rem;font-weight:700;color:var(--tx1)}
 .loi-region{font-family:var(--fm);font-size:.5rem;color:var(--tx4);letter-spacing:.08em}
 .loi-detail{font-size:.74rem;color:var(--tx3);line-height:1.6}
+
+/* LFRI summary table */
+.lfri-table{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.lfri-row{display:flex;align-items:center;justify-content:space-between;padding:8px 12px;border-radius:10px;gap:6px;flex-wrap:wrap}
+.lfri-name{font-size:.72rem;font-weight:700;color:var(--tx1);flex-shrink:0}
+.lfri-right{display:flex;align-items:center;gap:8px;flex-shrink:0;flex-wrap:wrap}
+.lfri-score{font-family:var(--fm);font-size:.52rem;font-weight:800}
+.lfri-badge{font-family:var(--fm);font-size:.4rem;padding:2px 7px;border-radius:20px;white-space:nowrap}
 .pilot-stat{text-align:center;padding:16px;background:#fff;border:1px solid var(--brd2);border-radius:var(--rl)}
 .pilot-stat-val{font-family:var(--fh);font-size:1.4rem;font-weight:800;margin-bottom:4px}
 .pilot-stat-lbl{font-size:.64rem;color:var(--tx3);font-weight:500}
@@ -2919,7 +2932,7 @@ tr:hover td{background:var(--bg2)}
               <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid rgba(13,148,136,0.1)">
                 <div style="display:flex;gap:5px;flex-wrap:wrap">
                   <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(13,148,136,0.08);color:var(--t1);border:1px solid rgba(13,148,136,0.2)">FSO: Artisan Focus</span>
-                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(217,119,6,0.08);color:var(--warn);border:1px solid rgba(217,119,6,0.2);font-weight:700">⏳ Deployment Pending</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.12);color:var(--g3);border:1px solid rgba(5,150,105,0.3);font-weight:700">✅ Trial Approved</span>
                 </div>
                 <div style="font-family:var(--fm);font-size:.44rem;color:var(--t1);font-weight:700">£150/mo</div>
               </div>
@@ -2969,34 +2982,34 @@ tr:hover td{background:var(--bg2)}
                 <div style="text-align:center"><div style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:var(--warn)">🚀 High</div><div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4)">Trial Readiness</div></div>
               </div>
             </div>
-            <!-- Mini LFRI table -->
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
-              <div style="display:flex;align-items:center;justify-content:space-between;padding:7px 12px;border-radius:10px;background:rgba(2,132,199,0.07);border:1px solid rgba(2,132,199,0.18)">
-                <span style="font-size:.72rem;font-weight:700;color:var(--tx1)">Domino's Forest Hall</span>
-                <div style="display:flex;align-items:center;gap:8px">
-                  <span style="font-family:var(--fm);font-size:.5rem;font-weight:800;color:var(--b1)">92/100</span>
-                  <span style="font-family:var(--fm);font-size:.4rem;padding:2px 6px;border-radius:20px;background:rgba(2,132,199,0.12);color:var(--b1);border:1px solid rgba(2,132,199,0.25)">✅ Pilot Approved</span>
+            <!-- Mini LFRI table — stacks to 1 col on mobile -->
+            <div class="lfri-table">
+              <div class="lfri-row" style="background:rgba(2,132,199,0.07);border:1px solid rgba(2,132,199,0.18)">
+                <span class="lfri-name">Domino's Forest Hall</span>
+                <div class="lfri-right">
+                  <span class="lfri-score" style="color:var(--b1)">92/100</span>
+                  <span class="lfri-badge" style="background:rgba(2,132,199,0.12);color:var(--b1);border:1px solid rgba(2,132,199,0.25)">✅ Pilot Approved</span>
                 </div>
               </div>
-              <div style="display:flex;align-items:center;justify-content:space-between;padding:7px 12px;border-radius:10px;background:rgba(5,150,105,0.07);border:1px solid rgba(5,150,105,0.18)">
-                <span style="font-size:.72rem;font-weight:700;color:var(--tx1)">Bella Italia</span>
-                <div style="display:flex;align-items:center;gap:8px">
-                  <span style="font-family:var(--fm);font-size:.5rem;font-weight:800;color:var(--g3)">88/100</span>
-                  <span style="font-family:var(--fm);font-size:.4rem;padding:2px 6px;border-radius:20px;background:rgba(5,150,105,0.12);color:var(--g3);border:1px solid rgba(5,150,105,0.25)">✅ Trial Approved</span>
+              <div class="lfri-row" style="background:rgba(5,150,105,0.07);border:1px solid rgba(5,150,105,0.18)">
+                <span class="lfri-name">Bella Italia</span>
+                <div class="lfri-right">
+                  <span class="lfri-score" style="color:var(--g3)">88/100</span>
+                  <span class="lfri-badge" style="background:rgba(5,150,105,0.12);color:var(--g3);border:1px solid rgba(5,150,105,0.25)">✅ Trial Approved</span>
                 </div>
               </div>
-              <div style="display:flex;align-items:center;justify-content:space-between;padding:7px 12px;border-radius:10px;background:rgba(5,150,105,0.07);border:1px solid rgba(5,150,105,0.18)">
-                <span style="font-size:.72rem;font-weight:700;color:var(--tx1)">Chilli Pizza Limited</span>
-                <div style="display:flex;align-items:center;gap:8px">
-                  <span style="font-family:var(--fm);font-size:.5rem;font-weight:800;color:var(--g3)">85/100</span>
-                  <span style="font-family:var(--fm);font-size:.4rem;padding:2px 6px;border-radius:20px;background:rgba(5,150,105,0.12);color:var(--g3);border:1px solid rgba(5,150,105,0.25)">✅ Trial Approved</span>
+              <div class="lfri-row" style="background:rgba(5,150,105,0.07);border:1px solid rgba(5,150,105,0.18)">
+                <span class="lfri-name">Chilli Pizza Limited</span>
+                <div class="lfri-right">
+                  <span class="lfri-score" style="color:var(--g3)">85/100</span>
+                  <span class="lfri-badge" style="background:rgba(5,150,105,0.12);color:var(--g3);border:1px solid rgba(5,150,105,0.25)">✅ Trial Approved</span>
                 </div>
               </div>
-              <div style="display:flex;align-items:center;justify-content:space-between;padding:7px 12px;border-radius:10px;background:rgba(13,148,136,0.07);border:1px solid rgba(13,148,136,0.18)">
-                <span style="font-size:.72rem;font-weight:700;color:var(--tx1)">Zesty Bites Pizzeria</span>
-                <div style="display:flex;align-items:center;gap:8px">
-                  <span style="font-family:var(--fm);font-size:.5rem;font-weight:800;color:var(--t1)">82/100</span>
-                  <span style="font-family:var(--fm);font-size:.4rem;padding:2px 6px;border-radius:20px;background:rgba(217,119,6,0.1);color:var(--warn);border:1px solid rgba(217,119,6,0.22)">⏳ Deployment Pending</span>
+              <div class="lfri-row" style="background:rgba(13,148,136,0.07);border:1px solid rgba(13,148,136,0.18)">
+                <span class="lfri-name">Zesty Bites Pizzeria</span>
+                <div class="lfri-right">
+                  <span class="lfri-score" style="color:var(--t1)">82/100</span>
+                  <span class="lfri-badge" style="background:rgba(13,148,136,0.12);color:var(--t1);border:1px solid rgba(13,148,136,0.25)">✅ Trial Approved</span>
                 </div>
               </div>
             </div>
