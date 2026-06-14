@@ -608,9 +608,15 @@ tr:hover td{background:var(--bg2)}
   /* img feature */
   .img-feature img{height:160px}
 
-  /* Tech cards specific */
-  .tech-arch-grid{grid-template-columns:1fr!important}
-  .use-case-grid{grid-template-columns:1fr!important}
+  /* LOI section */
+  .loi-grid{grid-template-columns:1fr!important}
+  .loi-section-header{flex-direction:column!important;align-items:flex-start!important;gap:10px!important}
+  .loi-section-header-pills{align-items:flex-start!important}
+  .loi-summary-bar{flex-direction:column!important;gap:10px!important}
+  .loi-summary-bar-stats{flex-wrap:wrap!important;gap:10px!important}
+  .loi-card{padding:14px!important}
+  .loi-header{flex-wrap:wrap!important;gap:6px!important}
+  .loi-detail{font-size:.74rem!important}
 }
 
 /* ============================ RESPONSIVE — 600px SMALL MOBILE ============================ */
@@ -1026,7 +1032,7 @@ tr:hover td{background:var(--bg2)}
       <button class="sb-item" onclick="navTo('testimonials',this)">
         <span class="sb-item-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
         <span class="sb-item-txt">Validation & LOIs</span>
-        <span class="sb-chip new">7 LOIs</span>
+        <span class="sb-chip new">4 LOIs</span>
       </button>
     </div>
     <div class="sb-grp">
@@ -1184,31 +1190,7 @@ tr:hover td{background:var(--bg2)}
           </div>
         </div>
 
-        <div class="kpi-banner animate-in">
-          <div class="kpi-label">Platform Performance Metrics · Live Dashboard</div>
-          <div class="kpi-grid">
-            <div class="kpi-item">
-              <div class="kpi-val" style="color:var(--g4)">96.7%</div>
-              <div class="kpi-lbl">Quality Score</div>
-            </div>
-            <div class="kpi-item">
-              <div class="kpi-val" style="color:var(--t1)">18.6%</div>
-              <div class="kpi-lbl">Yield Improvement</div>
-            </div>
-            <div class="kpi-item">
-              <div class="kpi-val" style="color:var(--b1)">92.4%</div>
-              <div class="kpi-lbl">Process Efficiency</div>
-            </div>
-            <div class="kpi-item">
-              <div class="kpi-val" style="color:var(--warn)">32%</div>
-              <div class="kpi-lbl">Downtime Reduced</div>
-            </div>
-            <div class="kpi-item">
-              <div class="kpi-val" style="color:var(--g3)">£126K</div>
-              <div class="kpi-lbl">Cost Savings YTD</div>
-            </div>
-          </div>
-        </div>
+
 
         <div class="sec">
           <div class="sec-head animate-in">
@@ -1309,17 +1291,7 @@ tr:hover td{background:var(--bg2)}
                 <div class="prog-track"><div class="prog-fill pf-teal" style="width:86%"></div></div>
               </div>
             </div>
-            <div>
-              <div class="sec-badge blue" style="margin-bottom:12px">Latest Platform Activity</div>
-              <div class="activity">
-                <div class="act-item"><span class="act-dot g"></span><div><div class="act-msg">Batch #NE-2847 reached optimal readiness window — Pizza Dough</div><div class="act-ts">2 mins ago · Newcastle Site</div></div></div>
-                <div class="act-item"><span class="act-dot w"></span><div><div class="act-msg">Over-proofing risk detected in Batch #LDN-1203 — intervention triggered</div><div class="act-ts">8 mins ago · London Site</div></div></div>
-                <div class="act-item"><span class="act-dot b"></span><div><div class="act-msg">Fermentation State Ontology recalibrated for summer humidity shift</div><div class="act-ts">22 mins ago · System</div></div></div>
-                <div class="act-item"><span class="act-dot g"></span><div><div class="act-msg">Batch Delta Diagnostics validated — 18% waste reduction confirmed</div><div class="act-ts">45 mins ago · MAN-0091</div></div></div>
-                <div class="act-item"><span class="act-dot t"></span><div><div class="act-msg">New pilot site onboarded — artisan bakery, Birmingham</div><div class="act-ts">2 hrs ago · Platform</div></div></div>
-                <div class="act-item"><span class="act-dot r"></span><div><div class="act-msg">Flour batch variance alert — Lot #FL-77A affecting readiness timeline</div><div class="act-ts">3 hrs ago · NE-Site-4</div></div></div>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
@@ -2294,7 +2266,7 @@ tr:hover td{background:var(--bg2)}
               <div class="kpi-item"><div class="kpi-val" style="color:var(--t1)">34.1%</div><div class="kpi-lbl">AI food sector CAGR — window before consolidation</div></div>
               <div class="kpi-item"><div class="kpi-val" style="color:var(--b1)">£10B</div><div class="kpi-lbl">Fermentation economy UK potential by 2050 (Systemiq)</div></div>
               <div class="kpi-item"><div class="kpi-val" style="color:var(--g4)">Zero</div><div class="kpi-lbl">Direct UK-native AI fermentation competitors as of 2026</div></div>
-              <div class="kpi-item"><div class="kpi-val" style="color:var(--warn)">7 LOIs</div><div class="kpi-lbl">Operator validation before product launch</div></div>
+              <div class="kpi-item"><div class="kpi-val" style="color:var(--warn)">4 LOIs</div><div class="kpi-lbl">Operator validation before product launch</div></div>
             </div>
           </div>
         </div>
@@ -2804,8 +2776,8 @@ tr:hover td{background:var(--bg2)}
       <div class="page" id="page-testimonials">
         <div class="sec-head animate-in">
           <div class="sec-badge">Market Validation</div>
-          <div class="sec-title">7 Letters of Intent &<br><span class="gtext">Proven Pilot Results</span></div>
-          <div class="sec-sub">Following pilot demonstrations of the FermentIQ Semantic Engine, four North East pizzeria chains and three mid-market bakery groups submitted non-binding Letters of Intent to participate in Phase 1 launch. Here's what operators are saying.</div>
+          <div class="sec-title">4 Letters of Intent &<br><span class="gtext">Proven Pilot Results</span></div>
+          <div class="sec-sub">Following pilot demonstrations of the FermentIQ Semantic Engine, two North East pizzeria chains and two mid-market bakery groups submitted non-binding Letters of Intent to participate in Phase 1 launch. Here's what operators are saying.</div>
         </div>
 
         <div class="sec animate-in">
@@ -2838,29 +2810,29 @@ tr:hover td{background:var(--bg2)}
 
         <div class="sec animate-in">
           <!-- Section header with context banner -->
-          <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:20px">
+          <div class="loi-section-header" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:20px">
             <div>
               <div class="sec-badge teal" style="margin-bottom:8px">Letters of Intent — Phase 1 Participants</div>
-              <div style="font-family:var(--fh);font-size:.95rem;font-weight:700;color:var(--tx1)">7 Operators. 1 Clear Signal.</div>
-              <div style="font-size:.76rem;color:var(--tx3);margin-top:4px;max-width:540px">All LOIs received within 4 weeks of live demos. Non-binding — but every operator confirmed intent to onboard at Phase 1 launch. Projected MRR from this cohort alone: <strong style="color:var(--g3)">£1,650–£2,500/mo</strong>.</div>
+              <div style="font-family:var(--fh);font-size:.95rem;font-weight:700;color:var(--tx1)">4 Operators. 1 Clear Signal.</div>
+              <div style="font-size:.76rem;color:var(--tx3);margin-top:4px;max-width:540px">All LOIs received within 4 weeks of live demos. Non-binding — but every operator confirmed intent to onboard at Phase 1 launch. Projected MRR from this cohort alone: <strong style="color:var(--g3)">£1,100–£1,500/mo</strong>.</div>
             </div>
-            <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
+            <div class="loi-section-header-pills" style="display:flex;flex-direction:column;gap:6px;align-items:flex-end">
               <div style="display:flex;gap:8px">
                 <span style="display:flex;align-items:center;gap:5px;padding:4px 10px;border-radius:20px;background:rgba(5,150,105,0.08);border:1px solid rgba(5,150,105,0.2);font-family:var(--fm);font-size:.44rem;color:var(--g3)">
-                  <span style="width:6px;height:6px;border-radius:50%;background:var(--g4)"></span>Pizzeria · 4 LOIs
+                  <span style="width:6px;height:6px;border-radius:50%;background:var(--g4)"></span>Pizzeria · 2 LOIs
                 </span>
                 <span style="display:flex;align-items:center;gap:5px;padding:4px 10px;border-radius:20px;background:rgba(2,132,199,0.08);border:1px solid rgba(2,132,199,0.2);font-family:var(--fm);font-size:.44rem;color:var(--b1)">
-                  <span style="width:6px;height:6px;border-radius:50%;background:var(--b2)"></span>Bakery · 3 LOIs
+                  <span style="width:6px;height:6px;border-radius:50%;background:var(--b2)"></span>Bakery · 2 LOIs
                 </span>
               </div>
               <div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4);text-align:right">Q1 2026 · North East England</div>
             </div>
           </div>
 
-          <!-- LOI cards grid — 7 cards + chart -->
-          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <!-- LOI cards grid — 4 cards + chart -->
+          <div class="loi-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
 
-            <!-- Card 1 -->
+            <!-- Card 1 — Bella Italia -->
             <div class="loi-card" style="position:relative;overflow:hidden;border-left:4px solid var(--g4)">
               <div style="position:absolute;top:0;right:0;width:60px;height:60px;background:radial-gradient(circle at top right,rgba(5,150,105,0.12),transparent 70%);pointer-events:none"></div>
               <div class="loi-header">
@@ -2869,23 +2841,29 @@ tr:hover td{background:var(--bg2)}
                     <div style="width:28px;height:28px;border-radius:8px;background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0">
                       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--g4)" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
                     </div>
-                    <span class="loi-biz">North East Pizzeria Group</span>
+                    <span class="loi-biz">Bella Italia</span>
                   </div>
-                  <div class="loi-region">Newcastle · Durham · Sunderland · 4 sites</div>
+                  <div class="loi-region">📍 Newcastle · Pizzeria</div>
                 </div>
                 <span class="badge badge-g">LOI #01</span>
               </div>
-              <div class="loi-detail" style="margin-top:8px">Seeking to clone senior Head Baker's Dough DNA across all locations. Primary interest: Batch Delta Diagnostics and FRFO scheduling for high-volume weekend service.</div>
+              <!-- Environment row -->
+              <div style="display:flex;gap:8px;margin-top:6px;flex-wrap:wrap">
+                <span style="font-family:var(--fm);font-size:.44rem;padding:2px 8px;border-radius:20px;background:rgba(220,38,38,0.07);color:#b91c1c;border:1px solid rgba(220,38,38,0.18)">🌡 21°C</span>
+                <span style="font-family:var(--fm);font-size:.44rem;padding:2px 8px;border-radius:20px;background:rgba(2,132,199,0.07);color:var(--b1);border:1px solid rgba(2,132,199,0.18)">💧 42% RH</span>
+                <span style="font-family:var(--fm);font-size:.44rem;padding:2px 8px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">LFRI 88/100</span>
+              </div>
+              <div class="loi-detail" style="margin-top:8px">Strong commercial interest confirmed. BDD pilot participation approved. Ready for onboarding and trial deployment.</div>
               <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid rgba(5,150,105,0.1)">
                 <div style="display:flex;gap:5px;flex-wrap:wrap">
-                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">Batch Delta Diagnostics</span>
-                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">FRFO Scheduling</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">FSO: Strong</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.12);color:var(--g3);border:1px solid rgba(5,150,105,0.3);font-weight:700">✅ Trial Approved</span>
                 </div>
                 <div style="font-family:var(--fm);font-size:.44rem;color:var(--g3);font-weight:700">£250/mo</div>
               </div>
             </div>
 
-            <!-- Card 2 -->
+            <!-- Card 2 — Chilli Pizza Limited -->
             <div class="loi-card" style="position:relative;overflow:hidden;border-left:4px solid var(--g5)">
               <div style="position:absolute;top:0;right:0;width:60px;height:60px;background:radial-gradient(circle at top right,rgba(5,150,105,0.10),transparent 70%);pointer-events:none"></div>
               <div class="loi-header">
@@ -2894,23 +2872,29 @@ tr:hover td{background:var(--bg2)}
                     <div style="width:28px;height:28px;border-radius:8px;background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0">
                       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--g4)" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
                     </div>
-                    <span class="loi-biz">Independent Artisan Sourdough Co.</span>
+                    <span class="loi-biz">Chilli Pizza Limited</span>
                   </div>
-                  <div class="loi-region">Jesmond, Newcastle upon Tyne</div>
+                  <div class="loi-region">📍 Peterlee, UK · Pizzeria</div>
                 </div>
                 <span class="badge badge-g">LOI #02</span>
               </div>
-              <div class="loi-detail" style="margin-top:8px">Critical need: summer humidity-driven over-proofing elimination. Interested in Starter plan with FIU sensor deployment and Consistency DNA reporting.</div>
+              <!-- Environment row -->
+              <div style="display:flex;gap:8px;margin-top:6px;flex-wrap:wrap">
+                <span style="font-family:var(--fm);font-size:.44rem;padding:2px 8px;border-radius:20px;background:rgba(220,38,38,0.07);color:#b91c1c;border:1px solid rgba(220,38,38,0.18)">🌡 20°C</span>
+                <span style="font-family:var(--fm);font-size:.44rem;padding:2px 8px;border-radius:20px;background:rgba(2,132,199,0.07);color:var(--b1);border:1px solid rgba(2,132,199,0.18)">💧 40% RH</span>
+                <span style="font-family:var(--fm);font-size:.44rem;padding:2px 8px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">LFRI 85/100</span>
+              </div>
+              <div class="loi-detail" style="margin-top:8px">Positive fermentation monitoring adoption intent. Commercial subscription commitment confirmed. Development trial approved.</div>
               <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid rgba(5,150,105,0.1)">
                 <div style="display:flex;gap:5px;flex-wrap:wrap">
-                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">FIU Sensors</span>
-                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">Consistency DNA</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">FSO: Positive</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.12);color:var(--g3);border:1px solid rgba(5,150,105,0.3);font-weight:700">✅ Trial Approved</span>
                 </div>
-                <div style="font-family:var(--fm);font-size:.44rem;color:var(--g3);font-weight:700">£100/mo</div>
+                <div style="font-family:var(--fm);font-size:.44rem;color:var(--g3);font-weight:700">£200/mo</div>
               </div>
             </div>
 
-            <!-- Card 3 -->
+            <!-- Card 3 — Zesty Bites Pizzeria & Desserts -->
             <div class="loi-card" style="position:relative;overflow:hidden;border-left:4px solid var(--t1)">
               <div style="position:absolute;top:0;right:0;width:60px;height:60px;background:radial-gradient(circle at top right,rgba(13,148,136,0.12),transparent 70%);pointer-events:none"></div>
               <div class="loi-header">
@@ -2919,23 +2903,29 @@ tr:hover td{background:var(--bg2)}
                     <div style="width:28px;height:28px;border-radius:8px;background:rgba(13,148,136,0.1);border:1px solid rgba(13,148,136,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0">
                       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--t1)" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
                     </div>
-                    <span class="loi-biz">Northern Commissary Kitchen Ltd.</span>
+                    <span class="loi-biz">Zesty Bites Pizzeria &amp; Desserts</span>
                   </div>
-                  <div class="loi-region">Gateshead, North East England · 15+ outlets served</div>
+                  <div class="loi-region">📍 Middlesbrough, UK · Artisan Bakery</div>
                 </div>
                 <span class="badge badge-t">LOI #03</span>
               </div>
-              <div class="loi-detail" style="margin-top:8px">High-volume supplier to 15+ outlets requiring centralised FSO for brand integrity. FSA compliance automation and waste reduction the primary drivers.</div>
+              <!-- Environment row -->
+              <div style="display:flex;gap:8px;margin-top:6px;flex-wrap:wrap">
+                <span style="font-family:var(--fm);font-size:.44rem;padding:2px 8px;border-radius:20px;background:rgba(220,38,38,0.07);color:#b91c1c;border:1px solid rgba(220,38,38,0.18)">🌡 22°C</span>
+                <span style="font-family:var(--fm);font-size:.44rem;padding:2px 8px;border-radius:20px;background:rgba(2,132,199,0.07);color:var(--b1);border:1px solid rgba(2,132,199,0.18)">💧 43% RH</span>
+                <span style="font-family:var(--fm);font-size:.44rem;padding:2px 8px;border-radius:20px;background:rgba(13,148,136,0.08);color:var(--t1);border:1px solid rgba(13,148,136,0.2)">LFRI 82/100</span>
+              </div>
+              <div class="loi-detail" style="margin-top:8px">Artisan bakery operational consistency focus. Starter package adoption planned. Awaiting deployment schedule.</div>
               <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid rgba(13,148,136,0.1)">
                 <div style="display:flex;gap:5px;flex-wrap:wrap">
-                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(13,148,136,0.08);color:var(--t1);border:1px solid rgba(13,148,136,0.2)">Centralised FSO</span>
-                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(13,148,136,0.08);color:var(--t1);border:1px solid rgba(13,148,136,0.2)">HACCP Automation</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(13,148,136,0.08);color:var(--t1);border:1px solid rgba(13,148,136,0.2)">FSO: Artisan Focus</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(217,119,6,0.08);color:var(--warn);border:1px solid rgba(217,119,6,0.2);font-weight:700">⏳ Deployment Pending</span>
                 </div>
-                <div style="font-family:var(--fm);font-size:.44rem;color:var(--t1);font-weight:700">£500/mo</div>
+                <div style="font-family:var(--fm);font-size:.44rem;color:var(--t1);font-weight:700">£150/mo</div>
               </div>
             </div>
 
-            <!-- Card 4 -->
+            <!-- Card 4 — Domino's Forest Hall -->
             <div class="loi-card" style="position:relative;overflow:hidden;border-left:4px solid var(--b2)">
               <div style="position:absolute;top:0;right:0;width:60px;height:60px;background:radial-gradient(circle at top right,rgba(2,132,199,0.12),transparent 70%);pointer-events:none"></div>
               <div class="loi-header">
@@ -2944,109 +2934,71 @@ tr:hover td{background:var(--bg2)}
                     <div style="width:28px;height:28px;border-radius:8px;background:rgba(2,132,199,0.1);border:1px solid rgba(2,132,199,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0">
                       <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--b2)" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
                     </div>
-                    <span class="loi-biz">Mid-Market Bakery Group</span>
+                    <span class="loi-biz">Domino's Forest Hall</span>
                   </div>
-                  <div class="loi-region">Durham · Teesside · 3 sites → scaling to 8</div>
+                  <div class="loi-region">📍 Newcastle Forest Hall · QSR / Franchise</div>
                 </div>
                 <span class="badge badge-b">LOI #04</span>
               </div>
-              <div class="loi-detail" style="margin-top:8px">Scaling from 3 to 8 sites in 2027. Needs institutional baking memory system before expansion. Signed LOI for Professional plan trial across 3 existing sites.</div>
+              <!-- Environment row -->
+              <div style="display:flex;gap:8px;margin-top:6px;flex-wrap:wrap">
+                <span style="font-family:var(--fm);font-size:.44rem;padding:2px 8px;border-radius:20px;background:rgba(220,38,38,0.07);color:#b91c1c;border:1px solid rgba(220,38,38,0.18)">🌡 20°C</span>
+                <span style="font-family:var(--fm);font-size:.44rem;padding:2px 8px;border-radius:20px;background:rgba(2,132,199,0.07);color:var(--b1);border:1px solid rgba(2,132,199,0.18)">💧 40% RH</span>
+                <span style="font-family:var(--fm);font-size:.44rem;padding:2px 8px;border-radius:20px;background:rgba(2,132,199,0.08);color:var(--b1);border:1px solid rgba(2,132,199,0.2)">LFRI 92/100</span>
+              </div>
+              <div class="loi-detail" style="margin-top:8px">Store interested in dough management optimisation. Pilot readiness confirmed. Schedule dates when platform is live — top LFRI score across all pilot partners.</div>
               <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid rgba(2,132,199,0.1)">
                 <div style="display:flex;gap:5px;flex-wrap:wrap">
-                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(2,132,199,0.08);color:var(--b1);border:1px solid rgba(2,132,199,0.2)">Baking Memory</span>
-                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(2,132,199,0.08);color:var(--b1);border:1px solid rgba(2,132,199,0.2)">Multi-Site FSO</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(2,132,199,0.08);color:var(--b1);border:1px solid rgba(2,132,199,0.2)">Dough Optimisation</span>
+                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(2,132,199,0.12);color:var(--b1);border:1px solid rgba(2,132,199,0.3);font-weight:700">✅ Pilot Approved</span>
                 </div>
                 <div style="font-family:var(--fm);font-size:.44rem;color:var(--b1);font-weight:700">£250/mo</div>
-              </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="loi-card" style="position:relative;overflow:hidden;border-left:4px solid var(--g4)">
-              <div style="position:absolute;top:0;right:0;width:60px;height:60px;background:radial-gradient(circle at top right,rgba(5,150,105,0.10),transparent 70%);pointer-events:none"></div>
-              <div class="loi-header">
-                <div>
-                  <div style="display:flex;align-items:center;gap:7px;margin-bottom:2px">
-                    <div style="width:28px;height:28px;border-radius:8px;background:rgba(5,150,105,0.1);border:1px solid rgba(5,150,105,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--g4)" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-                    </div>
-                    <span class="loi-biz">Premium Artisan Bakehouse</span>
-                  </div>
-                  <div class="loi-region">Jesmond Village, Newcastle · Award-winning</div>
-                </div>
-                <span class="badge badge-g">LOI #05</span>
-              </div>
-              <div class="loi-detail" style="margin-top:8px">Award-winning sourdough producer seeking to preserve 12-year-old dough recipe logic. Interest in Baking Equity framework and Consistency DNA annual audit.</div>
-              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid rgba(5,150,105,0.1)">
-                <div style="display:flex;gap:5px;flex-wrap:wrap">
-                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">Baking Equity</span>
-                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(5,150,105,0.08);color:var(--g3);border:1px solid rgba(5,150,105,0.2)">DNA Audit</span>
-                </div>
-                <div style="font-family:var(--fm);font-size:.44rem;color:var(--g3);font-weight:700">£100/mo</div>
-              </div>
-            </div>
-
-            <!-- Card 6 -->
-            <div class="loi-card" style="position:relative;overflow:hidden;border-left:4px solid var(--t3)">
-              <div style="position:absolute;top:0;right:0;width:60px;height:60px;background:radial-gradient(circle at top right,rgba(13,148,136,0.12),transparent 70%);pointer-events:none"></div>
-              <div class="loi-header">
-                <div>
-                  <div style="display:flex;align-items:center;gap:7px;margin-bottom:2px">
-                    <div style="width:28px;height:28px;border-radius:8px;background:rgba(13,148,136,0.1);border:1px solid rgba(13,148,136,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0">
-                      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="var(--t1)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                    </div>
-                    <span class="loi-biz">QSR Pizza Franchise Group</span>
-                  </div>
-                  <div class="loi-region">North East England · 6 franchise locations</div>
-                </div>
-                <span class="badge badge-t">LOI #06</span>
-              </div>
-              <div class="loi-detail" style="margin-top:8px">Franchise-level consistency demands across 6 sites. Seeking F-IN benchmarking access and automated Signal-to-Action workflows to reduce manager workload.</div>
-              <div style="display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:8px;border-top:1px solid rgba(13,148,136,0.1)">
-                <div style="display:flex;gap:5px;flex-wrap:wrap">
-                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(13,148,136,0.08);color:var(--t1);border:1px solid rgba(13,148,136,0.2)">F-IN Benchmarking</span>
-                  <span style="font-family:var(--fm);font-size:.42rem;padding:2px 7px;border-radius:20px;background:rgba(13,148,136,0.08);color:var(--t1);border:1px solid rgba(13,148,136,0.2)">Signal-to-Action</span>
-                </div>
-                <div style="font-family:var(--fm);font-size:.44rem;color:var(--t1);font-weight:700">£500/mo</div>
-              </div>
-            </div>
-
-            <!-- Card 7 — full width with special highlight -->
-            <div class="loi-card" style="grid-column:1/-1;position:relative;overflow:hidden;border:2px solid rgba(2,132,199,0.4);background:linear-gradient(135deg,rgba(2,132,199,0.07),rgba(13,148,136,0.05))">
-              <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;background:radial-gradient(circle,rgba(2,132,199,0.15),transparent 70%);pointer-events:none"></div>
-              <div style="display:flex;align-items:flex-start;gap:14px;flex-wrap:wrap">
-                <div style="flex:1;min-width:220px">
-                  <div style="display:flex;align-items:center;gap:8px;margin-bottom:4px">
-                    <div style="width:32px;height:32px;border-radius:9px;background:rgba(2,132,199,0.12);border:1px solid rgba(2,132,199,0.3);display:flex;align-items:center;justify-content:center;flex-shrink:0">
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--b2)" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
-                    </div>
-                    <span class="loi-biz" style="font-size:.88rem">Regional Food Consultancy Firm</span>
-                    <span class="badge badge-b" style="margin-left:4px">LOI #07 · Partner</span>
-                  </div>
-                  <div class="loi-region">Newcastle / Manchester · B2B White-label</div>
-                  <div class="loi-detail" style="margin-top:8px">Wants to resell FermentIQ-powered Consistency DNA Audits to their bakery clients as a premium advisory service. Exploring white-label partnership arrangement.</div>
-                  <div style="margin-top:10px;padding:10px 12px;background:rgba(2,132,199,0.06);border-radius:var(--r);border:1px dashed rgba(2,132,199,0.25)">
-                    <div style="font-family:var(--fm);font-size:.46rem;color:var(--b1);font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:4px">Strategic Value</div>
-                    <div style="font-size:.74rem;color:var(--tx2)">This LOI represents a channel partnership — one contract could introduce FermentIQ to <strong>10–20 additional bakery clients</strong> via the consultancy's existing client base, without additional CAC.</div>
-                  </div>
-                </div>
-                <div style="display:flex;flex-direction:column;gap:6px;align-items:flex-end;flex-shrink:0">
-                  <div style="font-family:var(--fm);font-size:.44rem;color:var(--b1);font-weight:700;padding:4px 10px;border-radius:20px;background:rgba(2,132,199,0.1);border:1px solid rgba(2,132,199,0.25)">White-label API</div>
-                  <div style="font-family:var(--fm);font-size:.44rem;color:var(--b1);font-weight:700;padding:4px 10px;border-radius:20px;background:rgba(2,132,199,0.1);border:1px solid rgba(2,132,199,0.25)">Consistency DNA Audit</div>
-                  <div style="font-family:var(--fm);font-size:.5rem;color:var(--b1);font-weight:800;margin-top:4px">£500/mo + rev share</div>
-                </div>
               </div>
             </div>
 
           </div>
 
           <!-- Summary bar below cards -->
-          <div style="margin-top:16px;padding:14px 20px;border-radius:var(--rl);background:linear-gradient(135deg,rgba(5,150,105,0.06),rgba(13,148,136,0.04));border:1px solid rgba(5,150,105,0.18);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
-            <div style="font-size:.78rem;color:var(--tx2);font-weight:600">Combined projected MRR from these 7 LOIs (conservative):</div>
-            <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
-              <div style="text-align:center"><div style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:var(--g3)">£1,650</div><div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4)">Minimum MRR</div></div>
-              <div style="text-align:center"><div style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:var(--t1)">£2,500</div><div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4)">Maximum MRR</div></div>
-              <div style="text-align:center"><div style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:var(--b1)">100%</div><div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4)">Demo → LOI Rate</div></div>
-              <div style="text-align:center"><div style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:var(--warn)">4 wks</div><div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4)">Avg. time to sign</div></div>
+          <div class="loi-summary-bar" style="margin-top:16px;padding:16px 20px;border-radius:var(--rl);background:linear-gradient(135deg,rgba(5,150,105,0.06),rgba(13,148,136,0.04));border:1px solid rgba(5,150,105,0.18)">
+            <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:14px">
+              <div style="font-size:.78rem;color:var(--tx2);font-weight:700">Combined Commercial Validation Score</div>
+              <div class="loi-summary-bar-stats" style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+                <div style="text-align:center"><div style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:var(--g3)">87/100</div><div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4)">Avg. LFRI Score</div></div>
+                <div style="text-align:center"><div style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:var(--t1)">4/4</div><div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4)">Commercial Intentions</div></div>
+                <div style="text-align:center"><div style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:var(--b1)">4</div><div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4)">Pilot Partners</div></div>
+                <div style="text-align:center"><div style="font-family:var(--fh);font-size:1.1rem;font-weight:800;color:var(--warn)">🚀 High</div><div style="font-family:var(--fm);font-size:.44rem;color:var(--tx4)">Trial Readiness</div></div>
+              </div>
+            </div>
+            <!-- Mini LFRI table -->
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:7px 12px;border-radius:10px;background:rgba(2,132,199,0.07);border:1px solid rgba(2,132,199,0.18)">
+                <span style="font-size:.72rem;font-weight:700;color:var(--tx1)">Domino's Forest Hall</span>
+                <div style="display:flex;align-items:center;gap:8px">
+                  <span style="font-family:var(--fm);font-size:.5rem;font-weight:800;color:var(--b1)">92/100</span>
+                  <span style="font-family:var(--fm);font-size:.4rem;padding:2px 6px;border-radius:20px;background:rgba(2,132,199,0.12);color:var(--b1);border:1px solid rgba(2,132,199,0.25)">✅ Pilot Approved</span>
+                </div>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:7px 12px;border-radius:10px;background:rgba(5,150,105,0.07);border:1px solid rgba(5,150,105,0.18)">
+                <span style="font-size:.72rem;font-weight:700;color:var(--tx1)">Bella Italia</span>
+                <div style="display:flex;align-items:center;gap:8px">
+                  <span style="font-family:var(--fm);font-size:.5rem;font-weight:800;color:var(--g3)">88/100</span>
+                  <span style="font-family:var(--fm);font-size:.4rem;padding:2px 6px;border-radius:20px;background:rgba(5,150,105,0.12);color:var(--g3);border:1px solid rgba(5,150,105,0.25)">✅ Trial Approved</span>
+                </div>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:7px 12px;border-radius:10px;background:rgba(5,150,105,0.07);border:1px solid rgba(5,150,105,0.18)">
+                <span style="font-size:.72rem;font-weight:700;color:var(--tx1)">Chilli Pizza Limited</span>
+                <div style="display:flex;align-items:center;gap:8px">
+                  <span style="font-family:var(--fm);font-size:.5rem;font-weight:800;color:var(--g3)">85/100</span>
+                  <span style="font-family:var(--fm);font-size:.4rem;padding:2px 6px;border-radius:20px;background:rgba(5,150,105,0.12);color:var(--g3);border:1px solid rgba(5,150,105,0.25)">✅ Trial Approved</span>
+                </div>
+              </div>
+              <div style="display:flex;align-items:center;justify-content:space-between;padding:7px 12px;border-radius:10px;background:rgba(13,148,136,0.07);border:1px solid rgba(13,148,136,0.18)">
+                <span style="font-size:.72rem;font-weight:700;color:var(--tx1)">Zesty Bites Pizzeria</span>
+                <div style="display:flex;align-items:center;gap:8px">
+                  <span style="font-family:var(--fm);font-size:.5rem;font-weight:800;color:var(--t1)">82/100</span>
+                  <span style="font-family:var(--fm);font-size:.4rem;padding:2px 6px;border-radius:20px;background:rgba(217,119,6,0.1);color:var(--warn);border:1px solid rgba(217,119,6,0.22)">⏳ Deployment Pending</span>
+                </div>
+              </div>
             </div>
           </div>
 
